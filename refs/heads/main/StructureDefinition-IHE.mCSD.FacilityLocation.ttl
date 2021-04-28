@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "MCSDFacilityLocation"];
   fhir:StructureDefinition.title [ fhir:value "mCSD Location for Facilities"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-04-28T13:09:12+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-04-28T13:21:18+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "IHE International - ITI domain Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
