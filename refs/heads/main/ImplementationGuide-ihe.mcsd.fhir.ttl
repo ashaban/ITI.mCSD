@@ -547,35 +547,34 @@
          fhir:index 1;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "1_overview.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Overview" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
-         fhir:ImplementationGuide.definition.page.page [
-           fhir:index 0;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "2_actors_and_transactions.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Actors and Transactions" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 1;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "3_security_considerations.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Security and Privacy Considerations" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 2;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "4_grouping.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Grouping Considerations" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 3;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "5_testplan.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Test Plan Considerations" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 4;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "a_issues.html" ];
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Open and Closed Considerations" ];
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ]
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "2_actors_and_transactions.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Actors and Transactions" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "3_security_considerations.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Security and Privacy Considerations" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "4_grouping.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Grouping Considerations" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "5_testplan.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Test Plan Considerations" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "a_issues.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Open and Closed Considerations" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 7;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "domain-Y.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Transaction Y" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
