@@ -1,0 +1,42 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "IHE.mCSD.Organization.HierarchyType",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyType</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: ihe-mcsd-hierarchy-type</p><p><b>status</b>: active</p><p><b>date</b>: Apr 28, 2021, 5:09:57 PM</p><p><b>publisher</b>: IHE International - ITI domain Group</p><p><b>contact</b>: IHE: <a href=\"http://ihe.net\">http://ihe.net</a></p><p><b>description</b>: This Search Parameter enables finding Organizations by the hierarchy type.</p><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 001}\">World</span></p><p><b>code</b>: ihe-mcsd-hierarchy-type</p><p><b>base</b>: Organization</p><p><b>type</b>: token</p><p><b>expression</b>: (extension('http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy').extension('hierarchy-type).value as CodeableConcept)</p></div>"
+  },
+  "url": "http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyType",
+  "version": "0.2.0",
+  "name": "ihe-mcsd-hierarchy-type",
+  "status": "active",
+  "date": "2021-04-28T17:09:57+00:00",
+  "publisher": "IHE International - ITI domain Group",
+  "contact": [
+    {
+      "name": "IHE",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ihe.net"
+        }
+      ]
+    }
+  ],
+  "description": "This Search Parameter enables finding Organizations by the hierarchy type.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "code": "ihe-mcsd-hierarchy-type",
+  "base": [
+    "Organization"
+  ],
+  "type": "token",
+  "expression": "(extension('http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy').extension('hierarchy-type).value as CodeableConcept)"
+}

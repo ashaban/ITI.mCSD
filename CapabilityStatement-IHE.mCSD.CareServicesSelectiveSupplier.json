@@ -261,6 +261,26 @@
             {
               "name": "partof.name:exact",
               "type": "string"
+            },
+            {
+              "name": "ihe-mcsd-hierarchy-type",
+              "definition": "http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyType",
+              "type": "token"
+            },
+            {
+              "name": "ihe-mcsd-hierarchy-partof",
+              "definition": "http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf",
+              "type": "reference"
+            },
+            {
+              "name": "ihe-mcsd-hierarchy-partof:below",
+              "definition": "http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf",
+              "type": "reference"
+            },
+            {
+              "name": "ihe-mcsd-hierarchy-partof:above",
+              "definition": "http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf",
+              "type": "reference"
             }
           ]
         },

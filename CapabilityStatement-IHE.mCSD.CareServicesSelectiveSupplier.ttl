@@ -262,6 +262,38 @@
          fhir:index 10;
          fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "partof.name:exact" ];
          fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 11;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "ihe-mcsd-hierarchy-type" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyType";
+           fhir:link <http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyType>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 12;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "ihe-mcsd-hierarchy-partof" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf";
+           fhir:link <http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 13;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "ihe-mcsd-hierarchy-partof:below" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf";
+           fhir:link <http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 14;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "ihe-mcsd-hierarchy-partof:above" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [
+           fhir:value "http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf";
+           fhir:link <http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf>
+         ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
        ]
      ], [
        fhir:index 3;
