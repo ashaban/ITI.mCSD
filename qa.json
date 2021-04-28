@@ -1,0 +1,12 @@
+{
+  "url": "http://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.mcsd.fhir",
+  "name": "IHE.mCSD",
+  "package-id": "ihe.mcsd.fhir",
+  "ig-ver": "0.2.0",
+  "date": "Wed, 28 Apr, 2021 04:07:40 +0000",
+  "errs": 75,
+  "warnings": 20,
+  "hints": 0,
+  "version": "4.0.1",
+  "tool": "4.5.0 (3)"
+}

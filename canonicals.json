@@ -1,0 +1,142 @@
+[
+  {
+    "id": "IHE.mCSD.CareServicesSelectiveConsumer",
+    "type": "CapabilityStatement",
+    "url": "http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer",
+    "version": "0.2.0",
+    "name": "IHE mCSD - Care Services Selective Consumer"
+  },
+  {
+    "id": "IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance",
+    "type": "CapabilityStatement",
+    "url": "http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance",
+    "version": "0.2.0",
+    "name": "IHE mCSD - Care Services Selective Consumer (Location Distance Option)"
+  },
+  {
+    "id": "IHE.mCSD.CareServicesSelectiveSupplier",
+    "type": "CapabilityStatement",
+    "url": "http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier",
+    "version": "0.2.0",
+    "name": "IHE mCSD - Care Services Selective Supplier"
+  },
+  {
+    "id": "IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance",
+    "type": "CapabilityStatement",
+    "url": "http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance",
+    "version": "0.2.0",
+    "name": "IHE mCSD - Care Services Selective Supplier (Location Distance Option)"
+  },
+  {
+    "id": "IHE.mCSD.CareServicesUpdateConsumer",
+    "type": "CapabilityStatement",
+    "url": "http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer",
+    "version": "0.2.0",
+    "name": "IHE mCSD - Care Services Update Consumer"
+  },
+  {
+    "id": "IHE.mCSD.CareServicesUpdateConsumer.LocationDistance",
+    "type": "CapabilityStatement",
+    "url": "http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance",
+    "version": "0.2.0",
+    "name": "IHE mCSD - Care Services Update Consumer (Location Distance Option)"
+  },
+  {
+    "id": "IHE.mCSD.CareServicesUpdateSupplier",
+    "type": "CapabilityStatement",
+    "url": "http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier",
+    "version": "0.2.0",
+    "name": "IHE mCSD - Care Services Update Supplier"
+  },
+  {
+    "id": "IHE.mCSD.CareServicesUpdateSupplier.LocationDistance",
+    "type": "CapabilityStatement",
+    "url": "http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance",
+    "version": "0.2.0",
+    "name": "IHE mCSD - Care Services Update Supplier (Location Distance Option)"
+  },
+  {
+    "id": "ihe.mcsd.fhir",
+    "type": "ImplementationGuide",
+    "url": "http://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.mcsd.fhir",
+    "version": "0.2.0",
+    "name": "IHE.mCSD"
+  },
+  {
+    "id": "IHE.mCSD.FacilityLocation",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation",
+    "version": "0.2.0",
+    "name": "MCSDFacilityLocation"
+  },
+  {
+    "id": "IHE.mCSD.FacilityOrganization",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization",
+    "version": "0.2.0",
+    "name": "MCSDFacilityOrganization"
+  },
+  {
+    "id": "IHE.mCSD.HealthcareService",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService",
+    "version": "0.2.0",
+    "name": "MCSDHealthcareService"
+  },
+  {
+    "id": "IHE.mCSD.JurisdictionLocation",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation",
+    "version": "0.2.0",
+    "name": "MCSDJurisdictionLocation"
+  },
+  {
+    "id": "IHE.mCSD.JurisdictionOrganization",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization",
+    "version": "0.2.0",
+    "name": "MCSDJurisdictionOrganization"
+  },
+  {
+    "id": "IHE.mCSD.Location",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location",
+    "version": "0.2.0",
+    "name": "MCSDLocation"
+  },
+  {
+    "id": "IHE.mCSD.LocationDistance",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance",
+    "version": "0.2.0",
+    "name": "MCSDLocationDistance"
+  },
+  {
+    "id": "IHE.mCSD.Organization",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization",
+    "version": "0.2.0",
+    "name": "MCSDOrganization"
+  },
+  {
+    "id": "IHE.mCSD.OrganizationHierarchy",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy",
+    "version": "0.2.0",
+    "name": "MCSDOrganizationHierarchy"
+  },
+  {
+    "id": "IHE.mCSD.Practitioner",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner",
+    "version": "0.2.0",
+    "name": "MCSDPractitioner"
+  },
+  {
+    "id": "IHE.mCSD.PractitionerRole",
+    "type": "StructureDefinition",
+    "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole",
+    "version": "0.2.0",
+    "name": "MCSDPractitionerRole"
+  }
+]

@@ -1,0 +1,174 @@
+﻿IHE.mCSD : Validation Results
+=========================================
+
+err = 75, warn = 20, info = 0
+IG Publisher Version: 1.1.68
+Generated Wed Apr 28 04:08:01 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = http://profiles.ihe.net/ITI/mCSD)
+
+ Build Errors : 10 / 0 / 0
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation : 4 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole : 2 / 1 / 1
+ /github/workspace/input/ihe-supplement : 0 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer : 11 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance : 2 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier : 11 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance : 2 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer : 10 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance : 2 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier : 10 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance : 2 / 1 / 1
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
+ERROR: /github/workspace/output/1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 213, column 13: The link '2_actors_and_transactions.html#client' for "Client" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 216, column 13: The link '2_actors_and_transactions.html#server' for "Server" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/2_actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 337, column 12: The link '2_actors_and_transactions.html#ab_option' for "Option AB" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/3_security_considerations.html#/html/body/div/div/div/div/div/p/a at Line 180, column 20: The link 'appendix_z.html#FHIRsecurity' for "Appendix Z.8 “Mobile Security Considerations”" cannot be resolved
+ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 207, column 12: The link '2_actors_and_transactions.html#client' for "Client" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 211, column 12: The link '2_actors_and_transactions.html#server' for "Server" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 264, column 45: The link 'IHE.FooBar.Client.html' for "Client" cannot be resolved
+ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 265, column 45: The link 'IHE.FooBar.Server.html' for "Client" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/p/strong/a at Line 181, column 189: The link 'suppl_template.html' for "Supplement Template" cannot be resolved
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation)
+INFORMATION: StructureDefinition/IHE.mCSD.FacilityLocation: StructureDefinition/IHE.mCSD.FacilityLocation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization)
+INFORMATION: StructureDefinition/IHE.mCSD.FacilityOrganization: StructureDefinition/IHE.mCSD.FacilityOrganization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService)
+INFORMATION: StructureDefinition/IHE.mCSD.HealthcareService: StructureDefinition/IHE.mCSD.HealthcareService: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation)
+ERROR: mCSD Location for Jurisdictions.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/location-boundary-geojson]]].Location.extension: Element Location.extension: derived max (*) cannot be greater than base max (1)
+INFORMATION: StructureDefinition/IHE.mCSD.JurisdictionLocation: StructureDefinition/IHE.mCSD.JurisdictionLocation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/IHE.mCSD.JurisdictionLocation: StructureDefinition/IHE.mCSD.JurisdictionLocation: StructureDefinition: Element Location.extension: derived max (*) cannot be greater than base max (1)
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization)
+INFORMATION: StructureDefinition/IHE.mCSD.JurisdictionOrganization: StructureDefinition/IHE.mCSD.JurisdictionOrganization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location)
+INFORMATION: StructureDefinition/IHE.mCSD.Location: StructureDefinition/IHE.mCSD.Location: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance)
+INFORMATION: StructureDefinition/IHE.mCSD.LocationDistance: StructureDefinition/IHE.mCSD.LocationDistance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization)
+INFORMATION: StructureDefinition/IHE.mCSD.Organization: StructureDefinition/IHE.mCSD.Organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy)
+INFORMATION: StructureDefinition/IHE.mCSD.OrganizationHierarchy: StructureDefinition/IHE.mCSD.OrganizationHierarchy: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner)
+INFORMATION: StructureDefinition/IHE.mCSD.Practitioner: StructureDefinition/IHE.mCSD.Practitioner: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole)
+INFORMATION: StructureDefinition/IHE.mCSD.PractitionerRole: StructureDefinition/IHE.mCSD.PractitionerRole: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole
+== /github/workspace/input/ihe-supplement.xml ==
+INFORMATION: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+WARNING: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+ERROR: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement.rest[0].resource[4]: cpb-12: 'Search parameter names must be unique in the context of a resource.' failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+ERROR: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement.rest[0].resource[4]: cpb-12: 'Search parameter names must be unique in the context of a resource.' failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'profile'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
