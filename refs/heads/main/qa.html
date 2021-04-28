@@ -1,0 +1,697 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 9, errors = 75, warn = 20, info = 0 -->
+<head>
+  <title>IHE.mCSD : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for IHE.mCSD</h1>
+ <p>Generated Wed Apr 28 04:08:01 UTC 2021, FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = <a href="http://profiles.ihe.net/ITI/mCSD">http://profiles.ihe.net/ITI/mCSD</a> (<a href="http://profiles.ihe.net/ITI/mCSD/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.68</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ihe.mcsd.fhir, Canonical = http://profiles.ihe.net/ITI/mCSD</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.2.0: <span stlye="color: marron; font-weight: bold">No entry in the package-list.json file for this version</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ihe.mcsd.fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://profiles.ihe.net/ITI/mCSD</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: ihe.fhir.template#0.2.0 -&gt; fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://profiles.ihe.net/ITI/mCSD (Problem #1 with package-list.json at http://profiles.ihe.net/ITI/mCSD: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 12 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 9, errors = 75, warn = 20, info = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>10</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.FacilityLocation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.FacilityOrganization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.HealthcareService"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.JurisdictionLocation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.JurisdictionOrganization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Location"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.LocationDistance"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Organization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.OrganizationHierarchy"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Practitioner"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.PractitionerRole"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_ihe-supplement"><b>/github/workspace/input/ihe-supplement</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer</b></a></td><td><b>11</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier</b></a></td><td><b>11</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer</b></a></td><td><b>10</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier</b></a></td><td><b>10</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.definition.parameter[23].value</b></td><td><b>error</b></td><td title=""><b>Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="1_overview.html#e75eccfe-246b-407b-bf18-2b01364c6e04">1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 213, column 13</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#client' for &quot;Client&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="1_overview.html#5ddf7f6b-b623-4eb6-aa1f-4a1ff4042ee2">1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 216, column 13</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#server' for &quot;Server&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="2_actors_and_transactions.html#54ceaf7a-8ce7-4720-a0bc-941cf1733049">2_actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 337, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#ab_option' for &quot;Option AB&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="3_security_considerations.html#4c39c137-afc9-4c94-ab2e-a165fc087292">3_security_considerations.html#/html/body/div/div/div/div/div/p/a at Line 180, column 20</a></b></td><td><b>error</b></td><td><b>The link 'appendix_z.html#FHIRsecurity' for &quot;Appendix Z.8 “Mobile Security Considerations”&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="domain-Y.html#999780c1-fb08-4f92-badf-a8cb71956ac7">domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 207, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#client' for &quot;Client&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="domain-Y.html#9227cbfa-2f29-4f27-8cc3-88854b3c8a9c">domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 211, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#server' for &quot;Server&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="domain-Y.html#ace56c7e-5ca2-464e-a88a-d7fb8c94349e">domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 264, column 45</a></b></td><td><b>error</b></td><td><b>The link 'IHE.FooBar.Client.html' for &quot;Client&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="domain-Y.html#d4223aa1-85d1-4dcd-ad01-798d0d9b0d32">domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 265, column 45</a></b></td><td><b>error</b></td><td><b>The link 'IHE.FooBar.Server.html' for &quot;Client&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#c363e26f-0173-49b0-b7c6-2c086dd6877f">index.html#/html/body/div/div/div/div/div/p/strong/a at Line 181, column 189</a></b></td><td><b>error</b></td><td><b>The link 'suppl_template.html' for &quot;Supplement Template&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.FacilityLocation"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.FacilityLocation.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.FacilityLocation: StructureDefinition/IHE.mCSD.FacilityLocation: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.FacilityOrganization"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.FacilityOrganization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.FacilityOrganization: StructureDefinition/IHE.mCSD.FacilityOrganization: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.HealthcareService"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.HealthcareService.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.HealthcareService: StructureDefinition/IHE.mCSD.HealthcareService: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.JurisdictionLocation"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.JurisdictionLocation.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>mCSD Location for Jurisdictions.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/location-boundary-geojson]]].Location.extension</b></td><td><b>error</b></td><td title=""><b>Element Location.extension: derived max (*) cannot be greater than base max (1)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.JurisdictionLocation: StructureDefinition/IHE.mCSD.JurisdictionLocation: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/IHE.mCSD.JurisdictionLocation: StructureDefinition/IHE.mCSD.JurisdictionLocation: StructureDefinition</b></td><td><b>error</b></td><td title=""><b>Element Location.extension: derived max (*) cannot be greater than base max (1)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.JurisdictionOrganization"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.JurisdictionOrganization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.JurisdictionOrganization: StructureDefinition/IHE.mCSD.JurisdictionOrganization: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Location"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.Location.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.Location: StructureDefinition/IHE.mCSD.Location: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.LocationDistance"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.LocationDistance.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.LocationDistance: StructureDefinition/IHE.mCSD.LocationDistance: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Organization"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.Organization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.Organization: StructureDefinition/IHE.mCSD.Organization: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.OrganizationHierarchy"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.OrganizationHierarchy.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.OrganizationHierarchy: StructureDefinition/IHE.mCSD.OrganizationHierarchy: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Practitioner"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.Practitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.Practitioner: StructureDefinition/IHE.mCSD.Practitioner: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.PractitionerRole"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.PractitionerRole.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.mCSD.PractitionerRole: StructureDefinition/IHE.mCSD.PractitionerRole: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_ihe-supplement"> </a>
+<h2><a href="ImplementationGuide-ihe.mcsd.fhir.html">/github/workspace/input/ihe-supplement.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide</b></td><td><b>warning</b></td><td title="ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesSelectiveConsumer.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l43/c109)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l126/c100)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l129/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l130/c112)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l209/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l212/c112)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l213/c116)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l268/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l323/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement.rest[0].resource[4]</b></td><td><b>error</b></td><td title="cpb-12: 'Search parameter names must be unique in the context of a resource.' failed"><b>cpb-12: 'Search parameter names must be unique in the context of a resource.' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l29/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l43/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesSelectiveSupplier.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l43/c109)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l126/c100)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l129/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l130/c112)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l209/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l212/c112)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l213/c116)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l268/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l323/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement.rest[0].resource[4]</b></td><td><b>error</b></td><td title="cpb-12: 'Search parameter names must be unique in the context of a resource.' failed"><b>cpb-12: 'Search parameter names must be unique in the context of a resource.' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l29/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l43/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesUpdateConsumer.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l43/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l46/c112)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l47/c116)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l62/c100)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l65/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l66/c112)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l81/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l96/c106)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'profile'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l111/c109)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l44/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesUpdateSupplier.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l43/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l46/c112)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l47/c116)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l62/c100)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l65/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l66/c112)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l81/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l96/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l111/c109)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l44/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>?pub-msg-2?</b></p><ul>
+ <li>WARNING: http://hl7.org/fhir/uv/myig/StructureDefinition/somepatientprofile: Profiles SHOULD state their own version</li>
+ <li>WARNING: http://hl7.org/fhir/uv/myig/StructureDefinition/ext-myExtension: Profiles SHOULD state their own version</li>
+ <li>// (And include comments like this justifying why)</li>
+ <li>// We define the version on a global basis, so don't need it on the individual source definitions</li>
+ <li>// Add warning and/or information messages here after you've confirmed that they aren't really a problem</li>
+</ul>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.FacilityLocation.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.FacilityOrganization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.HealthcareService.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.JurisdictionLocation.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.JurisdictionOrganization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.Location.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.LocationDistance.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.Organization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.OrganizationHierarchy.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.Practitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.PractitionerRole.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole)</b></td>
+   </tr>
+</table>
+</body>
+</html>

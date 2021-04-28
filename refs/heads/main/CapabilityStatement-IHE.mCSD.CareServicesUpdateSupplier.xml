@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="IHE.mCSD.CareServicesUpdateSupplier"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <p> The Server supports the following transactions : history-type</p>
+         
+    </div>
+  </text>
+  <url value="http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier"/>
+  <version value="0.2.0"/>
+  <name value="IHE mCSD - Care Services Update Supplier"/>
+  <title value="IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Update Supplier"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-04-27"/>
+  <publisher value="IHE International - ITI domain Group"/>
+  <contact>
+    <name value="IHE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ihe.net"/>
+    </telecom>
+  </contact>
+  <description value="CapabilityStatement for Care Services Update Supplier Actor in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="IHE http://www.ihe.net/Governance/#Intellectual_Property"/>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.0"/>
+  <format value="application/fhir+xml"/>
+  <format value="application/fhir+json"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="IHE ITI mCSD ITI-91 endpoint"/>
+    <resource>
+      <type value="Organization"/>
+      <documentation value="."/>
+      <interaction>
+        <code value="history-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_since"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Location"/>
+      <documentation value="."/>
+      <interaction>
+        <code value="history-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_since"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <documentation value="."/>
+      <interaction>
+        <code value="history-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_since"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <documentation value="."/>
+      <interaction>
+        <code value="history-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_since"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="HealthcareService"/>
+      <documentation value="."/>
+      <interaction>
+        <code value="history-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_since"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>
