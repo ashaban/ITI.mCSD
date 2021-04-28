@@ -395,31 +395,31 @@
         <nameUrl value="1_overview.html"/>
         <title value="Overview"/>
         <generation value="markdown"/>
-        <page>
-          <nameUrl value="2_actors_and_transactions.html"/>
-          <title value="Actors and Transactions"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="3_security_considerations.html"/>
-          <title value="Security and Privacy Considerations"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="4_grouping.html"/>
-          <title value="Grouping Considerations"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="5_testplan.html"/>
-          <title value="Test Plan Considerations"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <nameUrl value="a_issues.html"/>
-          <title value="Open and Closed Considerations"/>
-          <generation value="markdown"/>
-        </page>
+      </page>
+      <page>
+        <nameUrl value="2_actors_and_transactions.html"/>
+        <title value="Actors and Transactions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="3_security_considerations.html"/>
+        <title value="Security and Privacy Considerations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="4_grouping.html"/>
+        <title value="Grouping Considerations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="5_testplan.html"/>
+        <title value="Test Plan Considerations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="a_issues.html"/>
+        <title value="Open and Closed Considerations"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="domain-Y.html"/>

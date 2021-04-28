@@ -565,34 +565,32 @@
         {
           "nameUrl": "1_overview.html",
           "title": "Overview",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "2_actors_and_transactions.html",
-              "title": "Actors and Transactions",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "3_security_considerations.html",
-              "title": "Security and Privacy Considerations",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "4_grouping.html",
-              "title": "Grouping Considerations",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "5_testplan.html",
-              "title": "Test Plan Considerations",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "a_issues.html",
-              "title": "Open and Closed Considerations",
-              "generation": "markdown"
-            }
-          ]
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "2_actors_and_transactions.html",
+          "title": "Actors and Transactions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "3_security_considerations.html",
+          "title": "Security and Privacy Considerations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "4_grouping.html",
+          "title": "Grouping Considerations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "5_testplan.html",
+          "title": "Test Plan Considerations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "a_issues.html",
+          "title": "Open and Closed Considerations",
+          "generation": "markdown"
         },
         {
           "nameUrl": "domain-Y.html",
