@@ -395,6 +395,18 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyType>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/IHE.mCSD.Organization.HierarchyType" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Search Parameter enables finding Organizations by the hierarchy type." ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -404,7 +416,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "mCSD Organization for Facilities" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the mCSD Organization profile for mCSD Facilities." ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -417,7 +429,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "mCSD Organization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Organization resource for mCSD." ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -430,7 +442,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "mCSD Location for Jurisdictions" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the mCSD Location for mCSD Jurisdictions" ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -443,7 +455,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "mCSD Location with Distance" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the mCSD Location resource for distance searches." ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -456,7 +468,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "mCSD Practitioner" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Practitioner resource for mCSD." ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -469,7 +481,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "mCSD HealthcareService" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the HealthcareService resource for mCSD." ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -482,7 +494,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "mCSD Organization for Jurisdictions" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the mCSD Organization for mCSD Jurisdictions" ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -495,7 +507,19 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "mCSD Location for Facilities" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the mCSD Location profile for mCSD Facilities." ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/IHE.mCSD.Organization.HierarchyPartOf" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This Search Parameter enables finding Organizations by the hierarchy part of." ]
+     ], [
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -508,7 +532,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "mCSD Location" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the Location resource for mCSD." ]
      ], [
-       fhir:index 17;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -521,7 +545,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "mCSD PractitionerRole" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A profile on the PractitionerRole resource for mCSD." ]
      ], [
-       fhir:index 18;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

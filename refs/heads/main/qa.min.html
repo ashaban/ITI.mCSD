@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 9, errors = 75, warn = 20, info = 0 -->
+<!-- broken links = 9, errors = 77, warn = 22, info = 0 -->
 <head>
   <title>IHE.mCSD : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IHE.mCSD</h1>
- <p>Generated Wed Apr 28 13:21:45 UTC 2021, FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = <a href="http://profiles.ihe.net/ITI/mCSD">http://profiles.ihe.net/ITI/mCSD</a> (<a href="http://profiles.ihe.net/ITI/mCSD/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Wed Apr 28 17:10:22 UTC 2021, FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = <a href="http://profiles.ihe.net/ITI/mCSD">http://profiles.ihe.net/ITI/mCSD</a> (<a href="http://profiles.ihe.net/ITI/mCSD/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.68</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ihe.mcsd.fhir, Canonical = http://profiles.ihe.net/ITI/mCSD</td></tr>
@@ -37,14 +37,20 @@
 </td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://profiles.ihe.net/ITI/mCSD (Problem #1 with package-list.json at http://profiles.ihe.net/ITI/mCSD: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 12 path $)</td></tr>
- <tr><td>Summary:</td><td> broken links = 9, errors = 75, warn = 20, info = 0</td></tr>
+ <tr><td>Summary:</td><td> broken links = 9, errors = 77, warn = 22, info = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>10</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>12</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_SearchParameter-IHE.mCSD.Organization.HierarchyPartOf"><b>/github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_SearchParameter-IHE.mCSD.Organization.HierarchyType"><b>/github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyType</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.FacilityLocation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -115,31 +121,65 @@
      <td><b>ImplementationGuide.definition.parameter[23].value</b></td><td><b>error</b></td><td title=""><b>Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="1_overview.html#fe9d091e-8069-4cbf-87ff-bce090244c94">1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 213, column 13</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#client' for &quot;Client&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource SearchParameter/IHE.mCSD.Organization.HierarchyType.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="1_overview.html#5f447e31-c4b4-45d3-b6c9-d3ed391716af">1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 216, column 13</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#server' for &quot;Server&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource SearchParameter/IHE.mCSD.Organization.HierarchyPartOf.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="2_actors_and_transactions.html#49858349-87f9-46a6-8331-c1569e5ea5db">2_actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 337, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#ab_option' for &quot;Option AB&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
+     <td><b><a href="1_overview.html#fbe5ffef-8975-4b96-85a7-8cae17f13ea5">1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 213, column 13</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#client' for &quot;Client&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="3_security_considerations.html#ff05e987-da67-456d-b3cc-0f4e10e3377f">3_security_considerations.html#/html/body/div/div/div/div/div/p/a at Line 180, column 20</a></b></td><td><b>error</b></td><td><b>The link 'appendix_z.html#FHIRsecurity' for &quot;Appendix Z.8 “Mobile Security Considerations”&quot; cannot be resolved</b></td>
+     <td><b><a href="1_overview.html#30c0a388-384a-41a9-8be0-401bc5e2a71d">1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 216, column 13</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#server' for &quot;Server&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="domain-Y.html#c31c30c0-9fcc-490a-a54b-5e21b351f384">domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 207, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#client' for &quot;Client&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
+     <td><b><a href="2_actors_and_transactions.html#572c61b1-6ac8-4c32-a505-1c02924aad43">2_actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 337, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#ab_option' for &quot;Option AB&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="domain-Y.html#5d73d2fd-a395-4255-b4f9-01429aa4387c">domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 211, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#server' for &quot;Server&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
+     <td><b><a href="3_security_considerations.html#9ba258dc-7565-4c38-874a-0984476ca29a">3_security_considerations.html#/html/body/div/div/div/div/div/p/a at Line 180, column 20</a></b></td><td><b>error</b></td><td><b>The link 'appendix_z.html#FHIRsecurity' for &quot;Appendix Z.8 “Mobile Security Considerations”&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="domain-Y.html#21aad9c0-0ca6-44d0-a8e1-7fade90ec1e4">domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 264, column 45</a></b></td><td><b>error</b></td><td><b>The link 'IHE.FooBar.Client.html' for &quot;Client&quot; cannot be resolved</b></td>
+     <td><b><a href="domain-Y.html#baf5dcb8-cd98-4724-a412-0b74c7b8642c">domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 207, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#client' for &quot;Client&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="domain-Y.html#5c802d63-864e-48be-87c3-6fb371c03b64">domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 265, column 45</a></b></td><td><b>error</b></td><td><b>The link 'IHE.FooBar.Server.html' for &quot;Client&quot; cannot be resolved</b></td>
+     <td><b><a href="domain-Y.html#bc3d86f5-5905-40f3-bbd3-55a02511af6c">domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 211, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#server' for &quot;Server&quot; cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#ae5e5ded-1497-4cf1-8ce7-f4d30d5d2806">index.html#/html/body/div/div/div/div/div/p/strong/a at Line 181, column 189</a></b></td><td><b>error</b></td><td><b>The link 'suppl_template.html' for &quot;Supplement Template&quot; cannot be resolved</b></td>
+     <td><b><a href="domain-Y.html#d98310c9-7a8d-4cde-8d5f-6d9d4e2880cf">domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 264, column 45</a></b></td><td><b>error</b></td><td><b>The link 'IHE.FooBar.Client.html' for &quot;Client&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="domain-Y.html#52907159-a264-44ce-8884-7af9916116df">domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 265, column 45</a></b></td><td><b>error</b></td><td><b>The link 'IHE.FooBar.Server.html' for &quot;Client&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#52ccd9a0-d236-4254-9412-21afe955fbed">index.html#/html/body/div/div/div/div/div/p/strong/a at Line 181, column 189</a></b></td><td><b>error</b></td><td><b>The link 'suppl_template.html' for &quot;Supplement Template&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_SearchParameter-IHE.mCSD.Organization.HierarchyPartOf"> </a>
+<h2><a href="SearchParameter-IHE.mCSD.Organization.HierarchyPartOf.html">/github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter</b></td><td><b>warning</b></td><td title="spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_SearchParameter-IHE.mCSD.Organization.HierarchyType"> </a>
+<h2><a href="SearchParameter-IHE.mCSD.Organization.HierarchyType.html">/github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyType.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>SearchParameter/IHE.mCSD.Organization.HierarchyType: SearchParameter/IHE.mCSD.Organization.HierarchyType: SearchParameter</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>SearchParameter/IHE.mCSD.Organization.HierarchyType: SearchParameter/IHE.mCSD.Organization.HierarchyType: SearchParameter</b></td><td><b>warning</b></td><td title="spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
    </tr>
 </table>
 <hr/>
@@ -414,10 +454,10 @@
      <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l213/c116)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l268/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l288/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l323/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l343/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
    </tr>
    <tr style="background-color: #d6feff">
      <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
@@ -481,10 +521,10 @@
      <td><b>/f:CapabilityStatement/f:rest/f:resource/f:supportedProfile (l213/c116)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l268/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l288/c104)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l323/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
+     <td><b>/f:CapabilityStatement/f:rest/f:resource/f:profile (l343/c108)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'reference'</b></td>
    </tr>
    <tr style="background-color: #d6feff">
      <td><b>CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>

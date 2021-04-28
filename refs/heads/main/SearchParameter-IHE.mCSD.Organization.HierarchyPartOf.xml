@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="IHE.mCSD.Organization.HierarchyPartOf"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: ihe-mcsd-hierarchy-partof</p><p><b>status</b>: active</p><p><b>date</b>: Apr 28, 2021, 5:09:57 PM</p><p><b>publisher</b>: IHE International - ITI domain Group</p><p><b>contact</b>: IHE: <a href="http://ihe.net">http://ihe.net</a></p><p><b>description</b>: This Search Parameter enables finding Organizations by the hierarchy part of.</p><p><b>jurisdiction</b>: <span title="Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 001}">World</span></p><p><b>code</b>: ihe-mcsd-hierarchy-partof</p><p><b>base</b>: Organization</p><p><b>type</b>: reference</p><p><b>expression</b>: (extension('http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy').extension('part-of).value as Reference)</p><p><b>modifier</b>: below, above</p></div>
+  </text>
+  <url value="http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyPartOf"/>
+  <version value="0.2.0"/>
+  <name value="ihe-mcsd-hierarchy-partof"/>
+  <status value="active"/>
+  <date value="2021-04-28T17:09:57+00:00"/>
+  <publisher value="IHE International - ITI domain Group"/>
+  <contact>
+    <name value="IHE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ihe.net"/>
+    </telecom>
+  </contact>
+  <description value="This Search Parameter enables finding Organizations by the hierarchy part of."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <code value="ihe-mcsd-hierarchy-partof"/>
+  <base value="Organization"/>
+  <type value="reference"/>
+  <expression value="(extension(&#39;http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy&#39;).extension(&#39;part-of).value as Reference)"/>
+  <modifier value="below"/>
+  <modifier value="above"/>
+</SearchParameter>

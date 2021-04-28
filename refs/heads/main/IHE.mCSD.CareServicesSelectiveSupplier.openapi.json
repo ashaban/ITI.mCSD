@@ -552,6 +552,38 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "ihe-mcsd-hierarchy-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "This Search Parameter enables finding Organizations by the hierarchy type."
+          },
+          {
+            "name": "ihe-mcsd-hierarchy-partof",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "This Search Parameter enables finding Organizations by the hierarchy part of."
+          },
+          {
+            "name": "ihe-mcsd-hierarchy-partof:below",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "This Search Parameter enables finding Organizations by the hierarchy part of."
+          },
+          {
+            "name": "ihe-mcsd-hierarchy-partof:above",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "This Search Parameter enables finding Organizations by the hierarchy part of."
           }
         ]
       }

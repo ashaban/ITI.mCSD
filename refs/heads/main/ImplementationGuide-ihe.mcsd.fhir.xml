@@ -274,6 +274,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/IHE.mCSD.Organization.HierarchyType"/>
+      </reference>
+      <description value="This Search Parameter enables finding Organizations by the hierarchy type."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -351,6 +360,15 @@
       </reference>
       <name value="mCSD Location for Facilities"/>
       <description value="A profile on the mCSD Location profile for mCSD Facilities."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/IHE.mCSD.Organization.HierarchyPartOf"/>
+      </reference>
+      <description value="This Search Parameter enables finding Organizations by the hierarchy part of."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

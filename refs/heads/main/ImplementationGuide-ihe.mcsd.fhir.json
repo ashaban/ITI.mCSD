@@ -412,6 +412,18 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/IHE.mCSD.Organization.HierarchyType"
+        },
+        "description": "This Search Parameter enables finding Organizations by the hierarchy type."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -511,6 +523,18 @@
         },
         "name": "mCSD Location for Facilities",
         "description": "A profile on the mCSD Location profile for mCSD Facilities."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/IHE.mCSD.Organization.HierarchyPartOf"
+        },
+        "description": "This Search Parameter enables finding Organizations by the hierarchy part of."
       },
       {
         "extension": [
