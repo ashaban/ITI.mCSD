@@ -60,6 +60,11 @@
      fhir:CapabilityStatement.rest.resource [
        fhir:index 0;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Location" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance";
+         fhir:index 0;
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance>
+       ];
        fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ]
      ]
   ] .
