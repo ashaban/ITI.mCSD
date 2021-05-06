@@ -3,7 +3,7 @@
 
 err = 77, warn = 22, info = 0
 IG Publisher Version: 1.1.68
-Generated Wed Apr 28 17:10:22 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = http://profiles.ihe.net/ITI/mCSD)
+Generated Thu May 06 19:12:24 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = http://profiles.ihe.net/ITI/mCSD)
 
  Build Errors : 12 / 0 / 0
  /github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf : 0 / 1 / 1
@@ -33,15 +33,15 @@ Generated Wed Apr 28 17:10:22 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource SearchParameter/IHE.mCSD.Organization.HierarchyType.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource SearchParameter/IHE.mCSD.Organization.HierarchyPartOf.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 213, column 13: The link '2_actors_and_transactions.html#client' for "Client" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
-ERROR: /github/workspace/output/1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 216, column 13: The link '2_actors_and_transactions.html#server' for "Server" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
-ERROR: /github/workspace/output/2_actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 337, column 12: The link '2_actors_and_transactions.html#ab_option' for "Option AB" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
-ERROR: /github/workspace/output/3_security_considerations.html#/html/body/div/div/div/div/div/p/a at Line 180, column 20: The link 'appendix_z.html#FHIRsecurity' for "Appendix Z.8 “Mobile Security Considerations”" cannot be resolved
-ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 207, column 12: The link '2_actors_and_transactions.html#client' for "Client" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
-ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 211, column 12: The link '2_actors_and_transactions.html#server' for "Server" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
-ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 264, column 45: The link 'IHE.FooBar.Client.html' for "Client" cannot be resolved
-ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 265, column 45: The link 'IHE.FooBar.Server.html' for "Client" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/p/strong/a at Line 181, column 189: The link 'suppl_template.html' for "Supplement Template" cannot be resolved
+ERROR: /github/workspace/output/1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 212, column 13: The link '2_actors_and_transactions.html#client' for "Client" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 215, column 13: The link '2_actors_and_transactions.html#server' for "Server" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/2_actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 336, column 12: The link '2_actors_and_transactions.html#ab_option' for "Option AB" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/3_security_considerations.html#/html/body/div/div/div/div/div/p/a at Line 179, column 20: The link 'appendix_z.html#FHIRsecurity' for "Appendix Z.8 “Mobile Security Considerations”" cannot be resolved
+ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 206, column 12: The link '2_actors_and_transactions.html#client' for "Client" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 210, column 12: The link '2_actors_and_transactions.html#server' for "Server" cannot be resolved (valid targets: [document-source, document-consumer, ab-option, project-nav, publish-box, segment-post-footer, markdown-toc-actors, markdown-toc-transaction-descriptions, document-recipient, stripe, segment-footer, transaction-descriptions, ihe-logo, foobar-do-transaction, segment-content, actor-options, segment-header, actors-and-transactions, document-responder, fhir-logo, family-nav, ig-status, actors, markdown-toc, markdown-toc-actor-options, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 263, column 45: The link 'IHE.FooBar.Client.html' for "Client" cannot be resolved
+ERROR: /github/workspace/output/domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 264, column 45: The link 'IHE.FooBar.Server.html' for "Client" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/p/strong/a at Line 180, column 189: The link 'suppl_template.html' for "Supplement Template" cannot be resolved
 == /github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf.json ==
 INFORMATION: SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter
 WARNING: SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
@@ -110,15 +110,15 @@ INFORMATION: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide/ihe.mcsd.fhi
 WARNING: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource: Undefined element 'supporteProfile'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 ERROR: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement.rest[0].resource[4]: cpb-12: 'Search parameter names must be unique in the context of a resource.' failed
@@ -129,15 +129,15 @@ INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.Location
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource: Undefined element 'supporteProfile'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 ERROR: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement.rest[0].resource[4]: cpb-12: 'Search parameter names must be unique in the context of a resource.' failed
@@ -148,15 +148,15 @@ INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.Location
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'profile'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance.xml ==
@@ -166,15 +166,15 @@ INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDis
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:profile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
+ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance.xml ==
