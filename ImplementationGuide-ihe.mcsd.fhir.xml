@@ -207,10 +207,10 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer"/>
+        <reference value="CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance"/>
       </reference>
-      <name value="IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Update Consumer"/>
-      <description value="CapabilityStatement for Care Services Update Consumer Actor in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative."/>
+      <name value="IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Update Consumer Location Distance Option"/>
+      <description value="CapabilityStatement for Care Services Update Consumer Actor with the Location Distance option in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -227,20 +227,20 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance"/>
+        <reference value="CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance"/>
       </reference>
-      <name value="IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Update Supplier Location Distance Option"/>
-      <description value="CapabilityStatement for Care Services Update Supplier Actor with the Location Distance option in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative."/>
+      <name value="IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Selective Consumer Location Distance Option"/>
+      <description value="CapabilityStatement for Care Services Selective Consumer Actor with the Location Distance Option in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance"/>
+        <reference value="CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance"/>
       </reference>
-      <name value="IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Update Consumer Location Distance Option"/>
-      <description value="CapabilityStatement for Care Services Update Consumer Actor with the Location Distance option in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative."/>
+      <name value="IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Update Supplier Location Distance Option"/>
+      <description value="CapabilityStatement for Care Services Update Supplier Actor with the Location Distance option in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -257,10 +257,10 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance"/>
+        <reference value="CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer"/>
       </reference>
-      <name value="IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Selective Consumer Location Distance Option"/>
-      <description value="CapabilityStatement for Care Services Selective Consumer Actor with the Location Distance Option in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative."/>
+      <name value="IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Update Consumer"/>
+      <description value="CapabilityStatement for Care Services Update Consumer Actor in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -271,35 +271,6 @@
       </reference>
       <name value="IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Selective Supplier"/>
       <description value="CapabilityStatement for Care Services Selective Supplier Actor in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/IHE.mCSD.Organization.HierarchyType"/>
-      </reference>
-      <description value="This Search Parameter enables finding Organizations by the hierarchy type."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/IHE.mCSD.FacilityOrganization"/>
-      </reference>
-      <name value="mCSD Organization for Facilities"/>
-      <description value="A profile on the mCSD Organization profile for mCSD Facilities."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/IHE.mCSD.Organization"/>
-      </reference>
-      <name value="mCSD Organization"/>
-      <description value="A profile on the Organization resource for mCSD."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -316,26 +287,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/IHE.mCSD.LocationDistance"/>
-      </reference>
-      <name value="mCSD Location with Distance"/>
-      <description value="A profile on the mCSD Location resource for distance searches."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/IHE.mCSD.Practitioner"/>
-      </reference>
-      <name value="mCSD Practitioner"/>
-      <description value="A profile on the Practitioner resource for mCSD."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/IHE.mCSD.HealthcareService"/>
       </reference>
       <name value="mCSD HealthcareService"/>
@@ -346,10 +297,49 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/IHE.mCSD.JurisdictionOrganization"/>
+        <reference value="StructureDefinition/IHE.mCSD.FacilityOrganization"/>
       </reference>
-      <name value="mCSD Organization for Jurisdictions"/>
-      <description value="A profile on the mCSD Organization for mCSD Jurisdictions"/>
+      <name value="mCSD Organization for Facilities"/>
+      <description value="A profile on the mCSD Organization profile for mCSD Facilities."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IHE.mCSD.LocationDistance"/>
+      </reference>
+      <name value="mCSD Location with Distance"/>
+      <description value="A profile on the mCSD Location resource for distance searches."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IHE.mCSD.PractitionerRole"/>
+      </reference>
+      <name value="mCSD PractitionerRole"/>
+      <description value="A profile on the PractitionerRole resource for mCSD."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/IHE.mCSD.Organization.HierarchyType"/>
+      </reference>
+      <description value="This Search Parameter enables finding Organizations by the hierarchy type."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IHE.mCSD.Practitioner"/>
+      </reference>
+      <name value="mCSD Practitioner"/>
+      <description value="A profile on the Practitioner resource for mCSD."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -372,26 +362,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/IHE.mCSD.Location"/>
-      </reference>
-      <name value="mCSD Location"/>
-      <description value="A profile on the Location resource for mCSD."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/IHE.mCSD.PractitionerRole"/>
-      </reference>
-      <name value="mCSD PractitionerRole"/>
-      <description value="A profile on the PractitionerRole resource for mCSD."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -399,6 +369,36 @@
       </reference>
       <name value="mCSD Additional Hierarchies extension for mCSD Organization."/>
       <description value="If there are additional hierarchies (such as funding source),then use this extension."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IHE.mCSD.Organization"/>
+      </reference>
+      <name value="mCSD Organization"/>
+      <description value="A profile on the Organization resource for mCSD."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IHE.mCSD.JurisdictionOrganization"/>
+      </reference>
+      <name value="mCSD Organization for Jurisdictions"/>
+      <description value="A profile on the mCSD Organization for mCSD Jurisdictions"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IHE.mCSD.Location"/>
+      </reference>
+      <name value="mCSD Location"/>
+      <description value="A profile on the Location resource for mCSD."/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
