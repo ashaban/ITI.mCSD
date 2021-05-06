@@ -55,6 +55,11 @@
      fhir:CapabilityStatement.rest.resource [
        fhir:index 0;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "HealthcareService" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService";
+         fhir:index 0;
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService>
+       ];
        fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -136,6 +141,19 @@
      ], [
        fhir:index 1;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Location" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location";
+         fhir:index 0;
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location>
+       ], [
+         fhir:value "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation";
+         fhir:index 1;
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation>
+       ], [
+         fhir:value "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation";
+         fhir:index 2;
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation>
+       ];
        fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -213,6 +231,19 @@
      ], [
        fhir:index 2;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Organization" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization";
+         fhir:index 0;
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization>
+       ], [
+         fhir:value "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization";
+         fhir:index 1;
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization>
+       ], [
+         fhir:value "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization";
+         fhir:index 2;
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization>
+       ];
        fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;
@@ -298,6 +329,11 @@
      ], [
        fhir:index 3;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "Practitioner" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner";
+         fhir:index 0;
+         fhir:link <http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner>
+       ];
        fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
        fhir:CapabilityStatement.rest.resource.interaction [
          fhir:index 0;

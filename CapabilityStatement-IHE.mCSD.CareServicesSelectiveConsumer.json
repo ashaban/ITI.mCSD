@@ -49,6 +49,9 @@
       "resource": [
         {
           "type": "HealthcareService",
+          "supportedProfile": [
+            "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService"
+          ],
           "documentation": ".",
           "interaction": [
             {
@@ -132,6 +135,11 @@
         },
         {
           "type": "Location",
+          "supportedProfile": [
+            "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location",
+            "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation",
+            "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation"
+          ],
           "documentation": ".",
           "interaction": [
             {
@@ -211,6 +219,11 @@
         },
         {
           "type": "Organization",
+          "supportedProfile": [
+            "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization",
+            "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization",
+            "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization"
+          ],
           "documentation": ".",
           "interaction": [
             {
@@ -286,6 +299,9 @@
         },
         {
           "type": "Practitioner",
+          "supportedProfile": [
+            "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner"
+          ],
           "documentation": ".",
           "interaction": [
             {

@@ -52,6 +52,9 @@
       "resource": [
         {
           "type": "Location",
+          "supportedProfile": [
+            "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance"
+          ],
           "documentation": ".",
           "interaction": [
             {

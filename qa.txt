@@ -1,9 +1,9 @@
 ﻿IHE.mCSD : Validation Results
 =========================================
 
-err = 77, warn = 22, info = 0
+err = 39, warn = 22, info = 0
 IG Publisher Version: 1.1.68
-Generated Thu May 06 19:12:24 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = http://profiles.ihe.net/ITI/mCSD)
+Generated Thu May 06 19:49:44 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = http://profiles.ihe.net/ITI/mCSD)
 
  Build Errors : 12 / 0 / 0
  /github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf : 0 / 1 / 1
@@ -20,14 +20,14 @@ Generated Thu May 06 19:12:24 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2
  /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole : 2 / 1 / 1
  /github/workspace/input/ihe-supplement : 0 / 1 / 1
- /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer : 11 / 1 / 1
- /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance : 2 / 1 / 1
- /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier : 11 / 1 / 1
- /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance : 2 / 1 / 1
- /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer : 10 / 1 / 1
- /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance : 2 / 1 / 1
- /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier : 10 / 1 / 1
- /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance : 2 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer : 3 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier : 3 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance : 1 / 1 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
@@ -110,75 +110,37 @@ INFORMATION: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide/ihe.mcsd.fhi
 WARNING: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 ERROR: /f:CapabilityStatement/f:rest/f:resource: Undefined element 'supporteProfile'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 ERROR: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement.rest[0].resource[4]: cpb-12: 'Search parameter names must be unique in the context of a resource.' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
 ERROR: /f:CapabilityStatement/f:rest/f:resource: Undefined element 'supporteProfile'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 ERROR: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement.rest[0].resource[4]: cpb-12: 'Search parameter names must be unique in the context of a resource.' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 == /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-ERROR: /f:CapabilityStatement/f:rest/f:resource/f:supportedProfile: Undefined element 'reference'
 INFORMATION: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
