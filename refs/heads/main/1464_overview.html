@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>IHE.MCSD.FHIR\Overview - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/ihe.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a no-external="true" id="ihe-logo" href="http://ihe.net">
+    <img src="assets/images/ihe-international.png" alt="Visit the IHE website" height="71"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a no-external="true" id="fhir-logo" href="http://hl7.org/fhir"><img src="assets/images/ihe-logo.png" alt="Visit the IHE website" style="margin-top: 15px;" height="50"/> </a>
+</div>
+  <!-- <div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div> -->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Mobile Care Services Discovery</span><br/>0.2.0 - CI Build</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">mCSD Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="146_introduction.html">mCSD</a>
+      </li>
+      <li>
+        <a href="1461_actors_and_transactions.html">Actors and Transactions</a>
+      </li>
+      <li>
+        <a href="1462_actors_options.html">Actors Options</a>
+      </li>
+      <li>
+        <a href="1463_required_actor_groupings.html">Required Actor Groupings</a>
+      </li>
+      <li>
+        <a href="1464_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="1465_security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="1466_cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+      <li>
+        <a href="1467_deployment_considerations.html">Deployment Considerations</a>
+      </li>
+      <li>
+        <a href="a_issues.html">Open and Closed Issues</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Transactions<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ITI-90.html">Find Matching Care Services [ITI-90]</a>
+      </li>
+      <li>
+        <a href="ITI-91.html">Request Care Services Updates [ITI-91]</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Overview</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Mobile Care Services Discovery - Local Development build (v0.2.0). See the <a href="http://profiles.ihe.net/ITI/mCSD/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Overview</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#1464-mcsd-overview" id="markdown-toc-1464-mcsd-overview">1:46.4 mCSD Overview</a>    <ul>
+      <li><a href="#14641-concepts" id="markdown-toc-14641-concepts"><strong>1:46.4.1 Concepts</strong></a></li>
+      <li><a href="#14642-use-cases" id="markdown-toc-14642-use-cases"><strong>1:46.4.2 Use Cases</strong></a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="1464-mcsd-overview">1:46.4 mCSD Overview</h2>
+
+<h3 id="14641-concepts"><strong>1:46.4.1 Concepts</strong></h3>
+
+<p>The Mobile Care Services Discovery (mCSD) Profile supports queries for
+organizations, locations, facilities, practitioners, and healthcare
+services. The relationship between these entities is illustrated in
+Figure 1:46.4.1-1.</p>
+
+<p><a name="34182337-3df3-4749-a460-2f56bf5d7b29">​</a><img src="./media/image2.png" alt="null"/></p>
+
+<p>Figure 1:46.4.1-1: Top-level Relationships between Care Services Entities</p>
+
+<h4 id="146411-create-update-and-delete-services">1:46.4.1.1 Create, Update, and Delete Services</h4>
+
+<p>This profile enables tracking of changes to, searching for, and
+retrieval of, a set of resources. The creation, update, deletion and
+other maintenance activities of those resources is out of the scope of
+this profile.</p>
+
+<h3 id="14642-use-cases"><strong>1:46.4.2 Use Cases</strong></h3>
+
+<h4 id="146421-use-case-1-practitioner-query">1:46.4.2.1 Use Case #1: Practitioner Query</h4>
+
+<h5 id="1464211-practitioner-query-use-case-description">1:46.4.2.1.1 Practitioner Query Use Case Description</h5>
+
+<p>The patient, Vera Brooks, consults with her physician who recommends
+surgery. The physician can assist the patient in finding a suitable
+surgeon, taking into consideration the location and specialty of the
+surgeon.</p>
+
+<h5 id="1464212-practitioner-query-process-flow">1:46.4.2.1.2 Practitioner Query Process Flow</h5>
+
+<ul>
+  <li>
+    <p>Vera Brooks sees her family physician, Dr. West, regarding a recent
+knee injury.</p>
+  </li>
+  <li>
+    <p>Dr. West diagnoses the problem as a torn ACL and decides to refer
+Vera to an orthopedic surgeon.</p>
+  </li>
+  <li>
+    <p>Dr. West uses her EMR query tool, which implements a Care Services
+Selective Consumer to search for orthopedic surgeons within 30km of
+Vera’s home.</p>
+  </li>
+  <li>
+    <p>The EMR retrieves the information from a Healthcare Worker Registry
+(HWR) and displays it to Dr. West.</p>
+  </li>
+  <li>
+    <p>Vera and Dr. West decide on an orthopedic surgeon; Dr. West prepares
+a referral.</p>
+  </li>
+</ul>
+
+<p>The interactions between the various actors in this use case are shown
+in Figure 1:46.4.2.1.2-1.</p>
+
+<p><a name="1515eee3-51ba-46f2-8b06-15181587bc65">​</a><img src="./media/image3.png" alt="Untitled (6)"/></p>
+
+<p>Figure 1:46.4.2.1.2-1: Provider Query Use Case</p>
+
+<p>The text in Figure 1:46.4.2.1.2-2 was used to generate the diagram in
+Figure 1:46.4.2.1.2-1. Readers will generally find the diagram more
+informative. The text is included here to facilitate editing.</p>
+
+<p>@startuml</p>
+
+<p>Vera -&gt; Dr. West: My knee hurts</p>
+
+<p>Dr. West -&gt; Dr. West: diagnosis = torn ACL</p>
+
+<p>Dr. West -&gt; EMR (Care Services Selective Consumer): use EMR’s custom
+query tool \nsearch for orthopedic surgeons, \nwithin 30km of Vera’s
+home</p>
+
+<p>EMR (Care Services Selective Consumer) -&gt; HWR (Care Services Selective
+Supplier): Find Matching Care Services [ITI-90] request</p>
+
+<p>HWR (Care Services Selective Supplier) -&gt; EMR (Care Services Selective
+Consumer): Find Matching Care Services [ITI-90] response\ncontaining
+PractitionerRole list</p>
+
+<p>EMR (Care Services Selective Consumer) -&gt; EMR (Care Services Selective
+Consumer) : Resolve References</p>
+
+<p>EMR (Care Services Selective Consumer) -&gt; Dr. West : Review
+results\nwith office address, hours of operation</p>
+
+<p>Dr. West -&gt; Vera: Review and discuss options</p>
+
+<p>Dr. West -&gt; EMR (Care Services Selective Consumer): create Referral</p>
+
+<p>@enduml</p>
+
+<p>Figure 1:46.4.2.1.2-2: Provider Query Use Case Diagram Pseudocode</p>
+
+<h4 id="146422-use-case-2-provider-lookup-during-an-emergency-event">1:46.4.2.2 Use Case #2: Provider Lookup During an Emergency Event</h4>
+
+<h5 id="1464221-provider-lookup-during-an-emergency-event-use-case-description">1:46.4.2.2.1 Provider Lookup During an Emergency Event Use Case Description</h5>
+
+<p>During an emergency event, medical volunteers may report to assist. At
+an emergency site, the mCSD service can be queried to quickly identify
+and grant permission to credentialed providers to enter the scene.</p>
+
+<p>During Hurricane Katrina, health care volunteers were turned away from
+disaster sites because there was no means available to verify their
+credentials. During the Ebola outbreak in West Africa, it was unclear
+which health workers were available and had been trained in clinical
+care techniques.</p>
+
+<p>Resources from jurisdictional areas can be reported up to a central
+location so there is a single point of access. This would make it easier
+for responders on location to verify the credentials of a reporting
+health worker.</p>
+
+<h5 id="1464222-provider-lookup-during-an-emergency-event-process-flow">1:46.4.2.2.2 Provider Lookup During an Emergency Event Process Flow</h5>
+
+<ul>
+  <li>
+    <p>A jurisdictional (state/district) Care Services Update Supplier will
+provide data to a central Care Services Update Consumer (National
+HIE).</p>
+  </li>
+  <li>
+    <p>The National HIE will be a Care Services Update Consumer grouped
+with a Care Services Selective Supplier.</p>
+  </li>
+  <li>
+    <p>An emergency responder (e.g., police on site controlling access) can
+use a Care Services Selective Consumer to validate the credentials
+of a reporting health worker from the central Care Services Update
+Supplier.</p>
+  </li>
+  <li>
+    <p>Based on the result, the emergency responder can allow or deny
+access to the reporting health worker.</p>
+  </li>
+</ul>
+
+<p>The interactions between the various actors in this use case are shown
+in Figure 1:46.4.2.2.2-1.</p>
+
+<p><a name="f20d2121-098f-445c-bb71-363ef796dc18">​</a><img src="./media/image4.png" alt="Untitled (7)"/></p>
+
+<p>Figure 1:46.4.2.2.2-1: Federated Data Site Management Workflow</p>
+
+<p>The text in Figure 1:46.4.2.2.2-2 was used to generate the diagram in
+Figure 1:46.4.2.2.2-1. Readers will generally find the diagram more
+informative. The text is included here to facilitate editing.</p>
+
+<p>@startuml</p>
+
+<p>participant Health Worker</p>
+
+<p>participant Emergency Responder\nCare Services Selective Consumer</p>
+
+<p>participant National HIE\nCare Services Update Consumer\nCare Services
+Selective Supplier</p>
+
+<p>participant State HIE\nCare Services Update Supplier</p>
+
+<p>loop Regular update of practitioner information</p>
+
+<p>National HIE\nCare Services Update Consumer\nCare Services Selective
+Supplier -&gt; State HIE\nCare Services Update Supplier : Request Care
+Services Updates request [ITI-91]</p>
+
+<p>State HIE\nCare Services Update Supplier -&gt; National HIE\nCare
+Services Update Consumer\nCare Services Selective Supplier : Request
+Care Services Updates response [ITI-91]\nFHIR Bundle of Updated
+resources</p>
+
+<p>end</p>
+
+<dl>
+  <dt>Health Worker -&gt; Emergency Responder\nCare Services Selective Consumer</dt>
+  <dd>Reports for volunteer duty</dd>
+</dl>
+
+<p>Emergency Responder\nCare Services Selective Consumer -&gt; National
+HIE\nCare Services Update Consumer\nCare Services Selective Supplier :
+Find Matching Care Services request [ITI-90]</p>
+
+<p>National HIE\nCare Services Update Consumer\nCare Services Selective
+Supplier -&gt; Emergency Responder\nCare Services Selective Consumer :
+Find Matching Care Services response [ITI-90]\nFHIR Bundle of
+matching resources</p>
+
+<dl>
+  <dt>Emergency Responder\nCare Services Selective Consumer -&gt; Health Worker</dt>
+  <dd>Allow or deny access</dd>
+</dl>
+
+<p>@enduml</p>
+
+<p>Figure 1:46.4.2.2.2-2: Federated Data Site Management Workflow Diagram
+Pseudocode</p>
+
+<h4 id="146423-use-case-3-cross-jurisdictional-site-management">1:46.4.2.3 Use Case #3: Cross-jurisdictional Site Management</h4>
+
+<h5 id="1464231-cross-jurisdictional-site-management-description">1:46.4.2.3.1 Cross-jurisdictional Site Management Description</h5>
+
+<p>Projects like the U.S. President’s Emergency Plan for AIDS Relief
+(PEPFAR)’s Data for Accountability, Transparency, and Impact (DATIM)
+need to have public health and service delivery indicators reported from
+a large number of sites (health facilities, communities, warehouses)
+within an Operating Unit (country/region). Within an Operating Unit,
+there are multiple, possibly overlapping, jurisdictions in operation
+which are managed by multiple organizations (e.g., ministries of health
+(MoH), faith-based organizations, international non-governmental
+organizations). The project needs to receive indicator submissions from
+pre-existing data systems hosted by these organizations. This data
+exchange requires a way to share site lists and implement identifier
+mapping between the sites in these lists.</p>
+
+<p>Figure 1:46.4.2.3.1-1: Cross-Jurisdictional Data Exchange</p>
+
+<h5 id="1464232-cross-jurisdictional-site-management-process-flow">1:46.4.2.3.2 Cross-jurisdictional Site Management Process Flow</h5>
+
+<p>An Operating Unit (OU) will run a Care Services Update Consumer and Care
+Services Update Supplier for a specific geographic area (e.g., country).
+This Update Consumer will query other organizations (ministries of
+health, partners) operating in the geographic area to get updated site
+data for the sites managed by the OU.</p>
+
+<ul>
+  <li>
+    <p>An OU Update Consumer will query a sub-unit Care Services Update
+Suppliers (e.g., MoH) to get an updated list of sites under the
+sub-unit.</p>
+  </li>
+  <li>
+    <p>An OU Update Consumer will query a subunit Care Services Update
+Suppliers (e.g., partner) to get an updated list of sites under the
+subunit.</p>
+  </li>
+  <li>
+    <p>The OU Update Consumer will use entity matching to determine if
+there are duplicated sites in the combined data and flag them for
+review. (See
+<a href="https://wiki.ohie.org/display/documents/OpenHIE+Entity+Matching+Service">https://wiki.ohie.org/display/documents/OpenHIE+Entity+Matching+Service</a>)</p>
+  </li>
+</ul>
+
+<p>The interactions between the various actors in this use case are shown
+in Figure 1:46.4.2.3.2-1.</p>
+
+<p><a name="1007486e-605b-44c3-9508-6e577f180510">​</a><img src="./media/image5.png" alt="null"/></p>
+
+<p>Figure 1:46.4.2.3.2-1: Cross-jurisdictional Site Management Workflow</p>
+
+<p>The text in Figure 1:46.4.2.3.2-2 was used to generate the diagram in
+Figure 1:46.4.2.3.2-1. Readers will generally find the diagram more
+informative. The text is included here to facilitate editing.</p>
+
+<p>@startuml</p>
+
+<p>participant OU Reviewer</p>
+
+<p>participant Operating Unit\nCare Services Update Consumer</p>
+
+<p>participant MOH\nCare Services Update Supplier</p>
+
+<p>participant Partner\nCare Services Update Supplier</p>
+
+<p>Operating Unit\nCare Services Update Consumer-&gt;MOH\nCare Services
+Update Supplier: Request Care Services Updates [ITI-91] request</p>
+
+<p>MOH\nCare Services Update Supplier-&gt;Operating Unit\nCare Services
+Update Consumer: Request Care Services Updates [ITI-91] response</p>
+
+<p>Operating Unit\nCare Services Update Consumer-&gt;Partner\nCare Services
+Update Supplier: Request Care Services Updates [ITI-91] request</p>
+
+<p>Partner\nCare Services Update Supplier-&gt;Operating Unit\nCare Services
+Update Consumer: Request Care Services Updates [ITI-91] response</p>
+
+<p>Operating Unit\nCare Services Update Consumer-&gt;Operating Unit\nCare
+Services Update Consumer: Flag possible duplicates for review</p>
+
+<p>OU Reviewer-&gt;Operating Unit\nCare Services Update Consumer: Look at
+flagged Locations</p>
+
+<p>OU Reviewer-&gt;Operating Unit\nCare Services Update Consumer: Resolve
+flagged Locations</p>
+
+<p>@enduml</p>
+
+<p>Figure 1:46.4.2.3.2-2: Cross-jurisdictional Site Management Workflow
+Diagram Pseudocode</p>
+
+<h4 id="146424-use-case-4-master-facility-list">1:46.4.2.4 Use Case #4: Master Facility List</h4>
+
+<h5 id="1464241-master-facility-list-description">1:46.4.2.4.1 Master Facility List Description</h5>
+
+<p>A developing country has decided to implement a Master Facility List
+(MFL) based on recommendations from the WHO in the MFL Resource Package
+(<a href="https://www.who.int/healthinfo/country_monitoring_evaluation/mfl/en/">https://www.who.int/healthinfo/country_monitoring_evaluation/mfl/en/</a>).
+This resource includes a minimum data set to uniquely identify,
+locate, and contact a specific facility. Since this will be a single
+source of information for the country, there may be differing
+hierarchies that need to be supported for the facilities. For example,
+one hierarchy would be the administrative hierarchy for the country
+(region, district, county). Another would be the supply chain hierarchy
+where hubs may be located separately from administrative regions. Yet
+another could be a reporting hierarchy used to send data to
+international organizations.</p>
+
+<h5 id="1464242-master-facility-list-process-flow">1:46.4.2.4.2 Master Facility List Process Flow</h5>
+
+<p>A Master Facility List (MFL) will run a Care Services Update Supplier
+and Care Services Selective Supplier for an entire country. A Human
+Resources Information System (HRIS) will run a Care Services Update
+Consumer to retrieve the list of facilities. A Logistics Management
+Information System (LMIS) will run a Care Services Update Consumer to
+retrieve the list of facilities.</p>
+
+<ul>
+  <li>
+    <p>An HRIS will query the MFL for an updated list of facilities where
+Practitioners can provide care.</p>
+  </li>
+  <li>
+    <p>An LMIS will query the MFL for an updated list of facilities for the
+supply chain to deliver health care supplies.</p>
+  </li>
+  <li>
+    <p>The MFL will return updated facilities to each of these systems with
+multiple hierarchies.</p>
+  </li>
+</ul>
+
+<p>The interactions between the various actors in this use case are shown
+in Figure 1:46.4.2.4.1-1.</p>
+
+<p><a name="54959370-69aa-4b00-b34d-8140c24debe0">​</a><img src="./media/image6.png" alt="null"/></p>
+
+<p>Figure 1:46.4.2.4.2-1: Master Facility List Workflow</p>
+
+<p>The text in Figure 1:46.4.2.4.2-2 was used to generate the diagram in
+Figure 1:46.4.2.4.2-1. Readers will generally find the diagram more
+informative. The text is included here to facilitate editing.</p>
+
+<p>@startuml</p>
+
+<p>participant MFL\nCare Services Update Supplier</p>
+
+<p>participant HRIS\nCare Services Update Consumer</p>
+
+<p>participant LMIS\nCare Services Update Consumer</p>
+
+<p>HRIS\nCare Services Update Consumer-&gt;MFL\nCare Services Update
+Supplier: Request Care Services Updates [ITI-91] request</p>
+
+<p>MFL\nCare Services Update Supplier-&gt;HRIS\nCare Services Update
+Consumer: Request Care Services Updates [ITI-91] response</p>
+
+<p>LMIS\nCare Services Update Consumer-&gt;MFL\nCare Services Update
+Supplier: Request Care Services Updates [ITI-91] request</p>
+
+<p>MFL\nCare Services Update Supplier-&gt;LMIS\nCare Services Update
+Consumer: Request Care Services Updates [ITI-91] response</p>
+
+<p>@enduml</p>
+
+<p>Figure 1:46.4.2.4.2-2: Master Facility List Workflow Diagram Pseudocode</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="http://ihe.net">IHE International - ITI domain Group</a>.  Package ihe.mcsd.fhir#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 27, 2021 20:51+0000">2021-05-27</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: #81BEF7" href="http://profiles.ihe.net/ITI/mCSD/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="assets/images/cc-by.png" alt="CC0" style="border-style: none;" height="17"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="https://wiki.ihe.net/index.php/Category:CPs" target="_blank">Propose a change<img src="external.png" alt="external" style="vertical-align: baseline"/></a>
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

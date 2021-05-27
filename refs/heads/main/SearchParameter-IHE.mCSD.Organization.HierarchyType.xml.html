@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9.9"}
-    h3,h4,h5,h6{--heading-prefix:"9.9"}</style>
+    <style type="text/css">h2{--heading-prefix:"15.9"}
+    h3,h4,h5,h6{--heading-prefix:"15.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -92,19 +92,28 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="1_overview.html">Overview</a>
+        <a href="146_introduction.html">mCSD</a>
       </li>
       <li>
-        <a href="2_actors_and_transactions.html">Actors and Transactions</a>
+        <a href="1461_actors_and_transactions.html">Actors and Transactions</a>
       </li>
       <li>
-        <a href="3_security_considerations.html">Security Considerations</a>
+        <a href="1462_actors_options.html">Actors Options</a>
       </li>
       <li>
-        <a href="4_grouping.html">Cross Profile Considerations</a>
+        <a href="1463_required_actor_groupings.html">Required Actor Groupings</a>
       </li>
       <li>
-        <a href="5_testplan.html">Test Plan Considerations</a>
+        <a href="1464_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="1465_security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="1466_cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+      <li>
+        <a href="1467_deployment_considerations.html">Deployment Considerations</a>
       </li>
       <li>
         <a href="a_issues.html">Open and Closed Issues</a>
@@ -117,7 +126,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="domain-Y.html">go [domain-Y]</a>
+        <a href="ITI-90.html">Find Matching Care Services [ITI-90]</a>
+      </li>
+      <li>
+        <a href="ITI-91.html">Request Care Services Updates [ITI-91]</a>
       </li>
     </ul>
   </li>
@@ -141,14 +153,17 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b></b></li>
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
+    <a name="top"> </a>
     <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
@@ -213,14 +228,14 @@
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IHE.mCSD.Organization.HierarchyType&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyType&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.2.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ihe-mcsd-hierarchy-type&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: May 11, 2021, 6:20:01 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: IHE International - ITI domain Group&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: IHE: &lt;a href=&quot;http://ihe.net&quot;&gt;http://ihe.net&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This Search Parameter enables finding Organizations by the hierarchy type.&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: &lt;span title=&quot;Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 001}&quot;&gt;World&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: ihe-mcsd-hierarchy-type&lt;/p&gt;&lt;p&gt;&lt;b&gt;base&lt;/b&gt;: Organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: token&lt;/p&gt;&lt;p&gt;&lt;b&gt;expression&lt;/b&gt;: (extension('http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy').extension('hierarchy-type).value as CodeableConcept)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyType&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.2.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ihe-mcsd-hierarchy-type&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: May 27, 2021, 8:51:30 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: IHE International - ITI domain Group&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: IHE: &lt;a href=&quot;http://ihe.net&quot;&gt;http://ihe.net&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This Search Parameter enables finding Organizations by the hierarchy type.&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: &lt;span title=&quot;Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 001}&quot;&gt;World&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: ihe-mcsd-hierarchy-type&lt;/p&gt;&lt;p&gt;&lt;b&gt;base&lt;/b&gt;: Organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: token&lt;/p&gt;&lt;p&gt;&lt;b&gt;expression&lt;/b&gt;: (extension('http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy').extension('hierarchy-type).value as CodeableConcept)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a>
        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://profiles.ihe.net/ITI/mCSD/SearchParameter/IHE.mCSD.Organization.HierarchyType&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.2.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ihe-mcsd-hierarchy-type&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-05-11T18:20:01+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-05-27T20:51:30+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IHE International - ITI domain Group&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IHE&quot;/&gt;
@@ -266,11 +281,13 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://ihe.net">IHE International - ITI domain Group</a>.  Package ihe.mcsd.fhir#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 11, 2021 18:20+0000">2021-05-11</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://ihe.net">IHE International - ITI domain Group</a>.  Package ihe.mcsd.fhir#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 27, 2021 20:51+0000">2021-05-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

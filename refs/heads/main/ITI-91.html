@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IHE.MCSD.FHIR\Request Care Services Updates [ITI 91] - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ihe.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"14"}
+    h3,h4,h5,h6{--heading-prefix:"14"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="ihe-logo" no-external="true" href="http://ihe.net">
+    <img height="71" alt="Visit the IHE website" src="assets/images/ihe-international.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" style="margin-top: 15px;" alt="Visit the IHE website" src="assets/images/ihe-logo.png"/> </a>
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Mobile Care Services Discovery</span><br/>0.2.0 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">mCSD Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="146_introduction.html">mCSD</a>
+      </li>
+      <li>
+        <a href="1461_actors_and_transactions.html">Actors and Transactions</a>
+      </li>
+      <li>
+        <a href="1462_actors_options.html">Actors Options</a>
+      </li>
+      <li>
+        <a href="1463_required_actor_groupings.html">Required Actor Groupings</a>
+      </li>
+      <li>
+        <a href="1464_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="1465_security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="1466_cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+      <li>
+        <a href="1467_deployment_considerations.html">Deployment Considerations</a>
+      </li>
+      <li>
+        <a href="a_issues.html">Open and Closed Issues</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Transactions<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ITI-90.html">Find Matching Care Services [ITI-90]</a>
+      </li>
+      <li>
+        <a href="ITI-91.html">Request Care Services Updates [ITI-91]</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Request Care Services Updates [ITI 91]</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Mobile Care Services Discovery - Local Development build (v0.2.0). See the <a href="http://profiles.ihe.net/ITI/mCSD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Request Care Services Updates [ITI 91]</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#2391-request-care-services-updates-iti-91" id="markdown-toc-2391-request-care-services-updates-iti-91">2:3.91 Request Care Services Updates [ITI-91]</a>    <ul>
+      <li><a href="#23911-scope" id="markdown-toc-23911-scope">2:3.91.1 Scope</a></li>
+      <li><a href="#23912-actor-roles" id="markdown-toc-23912-actor-roles">2:3.91.2 Actor Roles</a></li>
+      <li><a href="#23913-referenced-standards" id="markdown-toc-23913-referenced-standards">2:3.91.3 Referenced Standards</a></li>
+      <li><a href="#23914-messages" id="markdown-toc-23914-messages">2:3.91.4 Messages</a></li>
+      <li><a href="#23915-security-considerations" id="markdown-toc-23915-security-considerations">2:3.91.5 Security Considerations</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="2391-request-care-services-updates-iti-91">2:3.91 Request Care Services Updates [ITI-91]</h2>
+
+<h3 id="23911-scope">2:3.91.1 Scope</h3>
+
+<p>The Request Care Services Updates transaction is used to return a list
+of updated care services resources. A Care Services Update Consumer
+initiates a Request Care Services Updates transaction against a Care
+Services Update Supplier.</p>
+
+<h3 id="23912-actor-roles">2:3.91.2 Actor Roles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Actor:</strong></th>
+      <th>Care Services Update Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Role:</strong></td>
+      <td>Requests a list of updated resources from the Care Services Update Supplier.</td>
+    </tr>
+    <tr>
+      <td><strong>Actor:</strong></td>
+      <td>Care Services Update Supplier</td>
+    </tr>
+    <tr>
+      <td><strong>Role:</strong></td>
+      <td>Accepts the update request and returns a list of updated resources.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="23913-referenced-standards">2:3.91.3 Referenced Standards</h3>
+
+<ul>
+  <li>
+    <p>HL7 FHIR standard Release 4 <a href="http://hl7.org/fhir/R4/index.html">http://hl7.org/fhir/R4/index.html</a></p>
+  </li>
+  <li>
+    <p>JSON – IETF RFC7159</p>
+  </li>
+  <li>
+    <p>XML</p>
+  </li>
+  <li>
+    <p>HTTP 1.1</p>
+  </li>
+</ul>
+
+<h3 id="23914-messages">2:3.91.4 Messages</h3>
+
+<p>Figure 2:3.91.4-1: Interaction Diagram</p>
+
+<h4 id="239141-request-care-services-updates-request-message">2:3.91.4.1 Request Care Services Updates Request Message</h4>
+
+<p>A Request Care Services Updates message is a FHIR history operation,
+optionally using the _since parameter, on the Organization, Location,
+Practitioner, PractitionerRole, or HealthcareService Resources.</p>
+
+<h5 id="2391411-trigger-events">2:3.91.4.1.1 Trigger Events</h5>
+
+<p>A Care Services Update Consumer triggers a Request Care Services Updates
+Request to a Care Services Update Supplier according to the business
+rules for the query. These business rules are outside the scope of this
+transaction.</p>
+
+<h5 id="2391412-message-semantics">2:3.91.4.1.2 Message Semantics</h5>
+
+<p>A Care Services Update Consumer initiates a history request using HTTP
+GET as defined at <a href="http://hl7.org/fhir/R4/http.html#history">http://hl7.org/fhir/R4/http.html#history</a> on the
+Organization, Location, Practitioner, PractitionerRole, or
+HealthcareService Resources.</p>
+
+<p>A Care Services Update Supplier and Care Services Update Consumer shall
+support the following parameters.</p>
+
+<p>_since</p>
+
+<p>They shall also support the requirements in ITI TF-2x: Z.6, Populating
+the Expected Response Format.</p>
+
+<p>A Care Services Update Supplier shall support receiving a request for
+both the JSON and the XML messaging formats as defined in FHIR. A Care
+Services Update Consumer shall accept either the JSON or the XML
+messaging formats as defined in FHIR.</p>
+
+<p>See ITI TF-2x: Appendix W for informative implementation material for
+this transaction.</p>
+
+<h5 id="2391413-expected-actions">2:3.91.4.1.3 Expected Actions</h5>
+
+<p>The Care Services Update Supplier shall process the query to discover
+the resources that match the search parameters given, and gives a
+response as per Section 2:3.91.4.2 or an error as per
+<a href="http://hl7.org/fhir/R4/search.html#errors">http://hl7.org/fhir/R4/search.html#errors</a>.</p>
+
+<h4 id="239142-request-care-services-updates-response-message">2:3.91.4.2 Request Care Services Updates Response Message</h4>
+
+<p>The Request Care Services Updates [ITI-91] transaction uses the
+response semantics as defined at
+<a href="http://hl7.org/fhir/R4/http.html#history">http://hl7.org/fhir/R4/http.html#history</a> as applicable for the
+resources.</p>
+
+<h5 id="2391421-trigger-events">2:3.91.4.2.1 Trigger Events</h5>
+
+<p>The Care Services Update Supplier sends the Request Care Services
+Updates Response to the Care Services Update Consumer when results are
+ready.</p>
+
+<h5 id="2391422-message-semantics">2:3.91.4.2.2 Message Semantics</h5>
+
+<p>The Care Services Update Supplier shall support the history response
+message as defined at <a href="http://hl7.org.fhir/R4/http.html#history">http://hl7.org.fhir/R4/http.html#history</a> on the
+following Resources:</p>
+
+<ul>
+  <li>
+    <p>Organization, as defined at
+<a href="http://hl7.org/fhir/R4/organization.html">http://hl7.org/fhir/R4/organization.html</a></p>
+  </li>
+  <li>
+    <p>Location, as defined at <a href="http://hl7.org/fhir/R4/location.html">http://hl7.org/fhir/R4/location.html</a></p>
+  </li>
+  <li>
+    <p>Practitioner, as defined at
+<a href="http://hl7.org/fhir/R4/practitioner.html">http://hl7.org/fhir/R4/practitioner.html</a></p>
+  </li>
+  <li>
+    <p>PractitionerRole, as defined at
+<a href="http://hl7.org/fhir/R4/practitionerrole.html">http://hl7.org/fhir/R4/practitionerrole.html</a></p>
+  </li>
+  <li>
+    <p>HealthcareService, as defined at
+<a href="http://hl7.org/fhir/R4/healthcareservice.html">http://hl7.org/fhir/R4/healthcareservice.html</a></p>
+
+    <p>All References (reference.reference element) to Resources defined in
+this transaction shall be populated with an accessible URL (see
+<a href="https://www.hl7.org/fhir/references-definitions.html#Reference.reference">https://www.hl7.org/fhir/references-definitions.html#Reference.reference</a>
+), unless the referenced resource is not present on a server
+accessible to the client.</p>
+  </li>
+</ul>
+
+<h6 id="23914221-fhir-organization-resource-constraints">2:3.91.4.2.2.1 FHIR Organization Resource Constraints</h6>
+
+<p>A Care Services Update Consumer and a Care Services Update Supplier
+shall query or return an Organization Resource. The Organization
+Resource shall be further constrained as described in Table
+3.90.4.2.2.1-1. The Element column in Table 3.90.4.2.2.1-1 references
+the object model defined at
+<a href="http://hl7.org/fhir/R4/organization.html#resource">http://hl7.org/fhir/R4/organization.html#resource</a>.</p>
+
+<p>When the Organization represents a Facility and is paired with a
+Location, the FHIR Organization Resource shall be further constrained as
+described in Table 3.90.4.2.2.1-2. The Element column in Table
+3.90.4.2.2.1-2 references the object model defined at
+<a href="http://hl7.org/fhir/R4/organization.html#resource">http://hl7.org/fhir/R4/organization.html#resource</a>.</p>
+
+<h6 id="23914222-fhir-location-resource-constraints">2:3.91.4.2.2.2 FHIR Location Resource Constraints</h6>
+
+<p>A Care Services Update Consumer and a Care Services Update Supplier
+shall query or return a Location Resource. The Location Resource shall
+be further constrained as described in Table 3.90.4.2.2.2-1. The Element
+column in Table 3.90.4.2.2.2-1 references the object model defined at
+<a href="http://hl7.org/fhir/R4/location.html#resource">http://hl7.org/fhir/R4/location.html#resource</a>.</p>
+
+<p>When the Location represents a Facility and is paired with an
+Organization, the FHIR Location Resource shall be further constrained as
+described in Table 3.90.4.2.2.2-2. The Element column in Table
+3.90.4.2.2.2-2 references the object model defined at
+<a href="http://hl7.org/fhir/R4/location.html#resource">http://hl7.org/fhir/R4/location.html#resource</a>.</p>
+
+<p>When supporting the Location Distance Option, the FHIR Location Resource
+shall be further constrained as described in Table 3.90.4.2.2.2-3. The
+Element column in Table 3.90.4.2.2.2-3 references the object model
+defined at <a href="http://hl7.org/fhir/R4/location.html#resource">http://hl7.org/fhir/R4/location.html#resource</a>.</p>
+
+<h6 id="23914223-fhir-practitioner-resource-constraints">2:3.91.4.2.2.3 FHIR Practitioner Resource Constraints</h6>
+
+<p>A Care Services Update Consumer and a Care Services Update Supplier
+shall query or return a Practitioner Resource. The Practitioner Resource
+shall be further constrained as described in Table 3.90.4.2.2.3-1. The
+Element column in Table 3.90.4.2.2.3-1 references the object model
+defined at <a href="http://hl7.org/fhir/R4/practitioner.html#resource">http://hl7.org/fhir/R4/practitioner.html#resource</a>.</p>
+
+<h6 id="23914224-fhir-practitionerrole-resource-constraints">2:3.91.4.2.2.4 FHIR PractitionerRole Resource Constraints</h6>
+
+<p>A Care Services Update Consumer and a Care Services Update Supplier
+shall query or return a PractitionerRole Resource. The PractitionerRole
+Resource shall be further constrained as described in Table
+3.90.4.2.2.4-1. The Element column in Table 3.90.4.2.2.4-1 references
+the object model defined at
+<a href="http://hl7.org/fhir/R4/practitionerrole.html#resource">http://hl7.org/fhir/R4/practitionerrole.html#resource</a>.</p>
+
+<h6 id="23914225-fhir-healthcareservice-resource-constraints">2:3.91.4.2.2.5 FHIR HealthcareService Resource Constraints</h6>
+
+<p>A Care Services Update Consumer and a Care Services Update Supplier
+shall query or return a HealthcareService Resource. The
+HealthcareService Resource shall be further constrained as described in
+Table 3.90.4.2.2.5-1. The Element column in Table 3.90.4.2.2.5-1
+references the object model defined at
+<a href="http://hl7.org/fhir/R4/healthcareservice.html#resource">http://hl7.org/fhir/R4/healthcareservice.html#resource</a>.</p>
+
+<h5 id="2391423-expected-actions">2:3.91.4.2.3 Expected Actions</h5>
+
+<p>The Care Services Update Consumer has received the response and
+continues with its workflow.</p>
+
+<h3 id="23915-security-considerations">2:3.91.5 Security Considerations</h3>
+
+<p>See ITI TF-1: 46.5 for security considerations for the mCSD Profile.</p>
+
+<p>See ITI TF-2x: Appendix Z.8 for common mobile security considerations.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://ihe.net">IHE International - ITI domain Group</a>.  Package ihe.mcsd.fhir#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 27, 2021 20:51+0000">2021-05-27</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: #81BEF7" target="_blank" href="http://profiles.ihe.net/ITI/mCSD/history.html">Version History</a></a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="https://wiki.ihe.net/index.php/Category:CPs">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

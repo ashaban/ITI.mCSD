@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7"}
-    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -90,19 +90,28 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="1_overview.html">Overview</a>
+        <a href="146_introduction.html">mCSD</a>
       </li>
       <li>
-        <a href="2_actors_and_transactions.html">Actors and Transactions</a>
+        <a href="1461_actors_and_transactions.html">Actors and Transactions</a>
       </li>
       <li>
-        <a href="3_security_considerations.html">Security Considerations</a>
+        <a href="1462_actors_options.html">Actors Options</a>
       </li>
       <li>
-        <a href="4_grouping.html">Cross Profile Considerations</a>
+        <a href="1463_required_actor_groupings.html">Required Actor Groupings</a>
       </li>
       <li>
-        <a href="5_testplan.html">Test Plan Considerations</a>
+        <a href="1464_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="1465_security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="1466_cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+      <li>
+        <a href="1467_deployment_considerations.html">Deployment Considerations</a>
       </li>
       <li>
         <a href="a_issues.html">Open and Closed Issues</a>
@@ -115,7 +124,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="domain-Y.html">go [domain-Y]</a>
+        <a href="ITI-90.html">Find Matching Care Services [ITI-90]</a>
+      </li>
+      <li>
+        <a href="ITI-91.html">Request Care Services Updates [ITI-91]</a>
       </li>
     </ul>
   </li>
@@ -139,14 +151,17 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Open and Closed Considerations</b></li>
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
+    <a name="top"> </a>
     <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
@@ -177,18 +192,130 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <h3 id="issues">Issues</h3>
+<h4 id="open-issues-and-questions">Open Issues and Questions</h4>
 
-<h4 id="open-issues">Open Issues</h4>
+<p>mCSD_7. Should there be additional required search parameters? Should
+we also require any reverse chaining (_has) options for the search?
+Should we require any reverse includes (_revinclude)? These would add
+complexity to the server and most will have similar options through
+include and normal chaining.</p>
 
-<ul>
-  <li>FooBar_001: this is open issue 1</li>
-</ul>
+<p>mCSD_8. IHE has updated mCSD to add support for organizational
+facilities. As part of this revision of mCSD, we have removed the
+“Organization Option”, “Location Option”, “Practitioner Option”, and
+“Healthcare Services Option”. These options existed to enable servers
+to focus only on a small subset of the resources. The actual burden to
+support all resources is small and set of options seems to add
+unnecessary complexity. The result would be that servers shall support
+all of the FHIR Resources, the clients can use the FHIR Resources in the
+way defined. If there is concern with the removal of these options,
+please submit a Public Comment.</p>
+
+<p>mCSD_9. We have added a requirement to include a meta.profile tag for
+all compliant resources. This is so that in a mixed server that has
+these resources as well as others, a Care Services Selective Consumer
+can limit the results of Find Matching Care Service [ITI-90] to only
+mCSD resources using the _profile parameter. Since this type of
+parameter isn’t allowed for the _history transaction for Request Care
+Services Updates [ITI-91] the Care Services Update Consumer may have
+to filter results if required. Is this a common configuration and is
+this step necessary?</p>
 
 <h4 id="closed-issues">Closed Issues</h4>
 
+<p><em>mCSD_1. Should we include the FreeBusy transaction and use cases or
+just remove them?</em></p>
+
 <ul>
-  <li>FooBar_002: this is closed issue 2</li>
+  <li>Take this out, and possibly add later if needed as an option.</li>
 </ul>
+
+<p>*mCSD_2. Should we include the aggregate reporting use case from Care
+Services Discovery (CSD) or remove with a reference to Aggregate Data
+Exchange (ADX) in cross profile considerations? This use case would
+define options for the actors in this use case to return aggregate data.
+*</p>
+
+<ul>
+  <li>At this time we do not believe these are key uses cases, but request
+feedback.</li>
+</ul>
+
+<p>*mCSD_3. How do we capture data about community health workers? In some
+environments, there are community health workers that are associated
+with a facility but don’t actually work there. Such a worker might have
+a set area of villages that they rotate through providing
+community-based care. The villages are within the catchment area of a
+Health facility, and the supervisor of the community health worker may
+be based at that facility. *</p>
+
+<p><em>Not quite sure the best way to capture this when looking at:</em></p>
+
+<p><a href="http://build.fhir.org/location.html#bnr"><em>http://build.fhir.org/location.html#bnr</em></a></p>
+
+<p>*It is clear that we have a hierarchy of locations to capture the
+geographic hierarchy (jurisdictions): *</p>
+
+<ul>
+  <li>
+    <p><em>The health facility in question would be situated at a location
+above the village level, say at the county or district level - this
+we can capture in the parent-child relationship “partOf” in the
+location resource</em></p>
+  </li>
+  <li>
+    <p><em>The community health worker is providing services at several
+villages - this we can capture through the location data field of
+the role in the practitioner resource</em></p>
+  </li>
+  <li>
+    <p><em>The community health worker is associated to a health facility -
+again we can capture this through the location field but perhaps we
+would use a different role to indicate that they’re community health
+worker associated to this facility but not directly providing
+services at the facility, only its catchment area</em></p>
+  </li>
+  <li>
+    <p><em>In case a community health worker is reporting to a supervisor -
+that’s not captured anywhere that I can see in FHIR. I think this is
+a larger that exists beyond the community health worker context</em></p>
+  </li>
+</ul>
+
+<p>Perhaps the best way to model this is to define each village as a
+location, and associate that worker with each location they rotate
+through. Each village is a partOf the health district. The facility is
+also a location that is partOf the district. The practitioner is related
+to the village locations with a “delivers care to” role; and to the
+facility with a “based out of” role.</p>
+
+<p><em>mCSD_4. Do we need to include more geospatial data (such as polygons
+or more complex geometry types) stored with Locations and how? This
+would be so jurisdictions (such as districts or counties) could include
+that data instead of just a position (latitude/longitude).
+<a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&amp;tracker_item_id=13391">CP#13391</a>
+has been opened for this.</em></p>
+
+<p>As per the request, FHIR has added a standard extension to address this:
+<a href="https://www.hl7.org/fhir/extension-location-boundary-geojson.html">https://www.hl7.org/fhir/extension-location-boundary-geojson.html</a></p>
+
+<p><em>mCSD_5. With a federated deployment, data may come from multiple
+sources and there can be an issue with resolving duplicate records and
+maintaining the mapping. Patient has a link field and we have opened a
+CP for Organization, Location, and Practitioner. CP
+<a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&amp;tracker_item_id=13264">GF#13264</a>
+has been opened for this. There is also the Linkage resource, but it is
+maturity level 0.</em></p>
+
+<p>FHIR has closed the issued with the recommendation to use the Linkage
+resource to handle this.</p>
+
+<p><em>mCSD_6. We need a way to deprecate identifiers. For now we can use
+period and we have created a CP to add an entry to the use field:
+<a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&amp;tracker_item_id=13265">GF#13265</a>.</em></p>
+
+<p>FHIR has added an additional Identifier.use code of “old” for this case.</p>
+
 
 
 
@@ -208,11 +335,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="http://ihe.net">IHE International - ITI domain Group</a>.  Package ihe.mcsd.fhir#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 11, 2021 18:20+0000">2021-05-11</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://ihe.net">IHE International - ITI domain Group</a>.  Package ihe.mcsd.fhir#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 27, 2021 20:51+0000">2021-05-27</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
