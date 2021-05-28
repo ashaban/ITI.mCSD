@@ -1,11 +1,11 @@
 ﻿IHE.mCSD : Validation Results
 =========================================
 
-err = 44, warn = 22, info = 0
+err = 39, warn = 22, info = 0
 IG Publisher Version: 1.1.72
-Generated Thu May 27 20:51:57 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = http://profiles.ihe.net/ITI/mCSD)
+Generated Fri May 28 01:55:45 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = http://profiles.ihe.net/ITI/mCSD)
 
- Build Errors : 8 / 0 / 0
+ Build Errors : 3 / 0 / 0
  /github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyType : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation : 2 / 1 / 1
@@ -33,11 +33,6 @@ Generated Thu May 27 20:51:57 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource SearchParameter/IHE.mCSD.Organization.HierarchyType.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource SearchParameter/IHE.mCSD.Organization.HierarchyPartOf.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/1464_overview.html#/html/body/div/div/div/div/div/p/img at Line 210, column 5: The image source 'media/image2.png' cannot be resolved
-ERROR: /github/workspace/output/1464_overview.html#/html/body/div/div/div/div/div/p/img at Line 261, column 5: The image source 'media/image3.png' cannot be resolved
-ERROR: /github/workspace/output/1464_overview.html#/html/body/div/div/div/div/div/p/img at Line 346, column 5: The image source 'media/image4.png' cannot be resolved
-ERROR: /github/workspace/output/1464_overview.html#/html/body/div/div/div/div/div/p/img at Line 451, column 5: The image source 'media/image5.png' cannot be resolved
-ERROR: /github/workspace/output/1464_overview.html#/html/body/div/div/div/div/div/p/img at Line 539, column 5: The image source 'media/image6.png' cannot be resolved
 == /github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf.json ==
 INFORMATION: SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter
 WARNING: SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
