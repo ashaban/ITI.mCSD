@@ -1,0 +1,63 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "IHE.mCSD.CareServicesUpdateSupplier.LocationDistance",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p> The Server supports the following transactions : history-type</p>\n         \n    </div>"
+  },
+  "url": "http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance",
+  "version": "0.2.0",
+  "name": "IHE mCSD - Care Services Update Supplier (Location Distance Option)",
+  "title": "IHE ITI Mobile Care Services Discovery (mCSD) - Care Services Update Supplier Location Distance Option",
+  "status": "draft",
+  "experimental": true,
+  "date": "2021-04-27",
+  "publisher": "IHE International - ITI domain Group",
+  "contact": [
+    {
+      "name": "IHE",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ihe.net"
+        }
+      ]
+    }
+  ],
+  "description": "CapabilityStatement for Care Services Update Supplier Actor with the Location Distance option in the IHE IT Infrastructure Technical Framework Supplement IHE mCSD. See http://wiki.ihe.net/index.php/Mobile_Care_Services_Discovery_(mCSD).  The IHE Profile text is Normative, this conformance resource is Informative.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "copyright": "IHE http://www.ihe.net/Governance/#Intellectual_Property",
+  "kind": "requirements",
+  "imports": [
+    "http://profiles.ihe.net/ITI/mCSD/CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier"
+  ],
+  "fhirVersion": "4.0.0",
+  "format": [
+    "application/fhir+xml",
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "IHE ITI mCSD ITI-91 endpoint",
+      "resource": [
+        {
+          "type": "Location",
+          "supportedProfile": [
+            "http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance"
+          ],
+          "documentation": "."
+        }
+      ]
+    }
+  ]
+}

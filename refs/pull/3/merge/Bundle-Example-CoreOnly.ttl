@@ -1,0 +1,137 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/ITI/mCSD/Bundle/Example-CoreOnly> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-CoreOnly"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Organization/Organization-Example" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Organization/Organization-Example>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Organization" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Location/Location-Example" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Location/Location-Example>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Location" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/HealthcareService/HealthcareService-Example" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/HealthcareService/HealthcareService-Example>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "HealthcareService" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/PractitionerRole/PractitionerRole-Example" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/PractitionerRole/PractitionerRole-Example>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "PractitionerRole" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Practitioner/Practitioner-Example" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Practitioner/Practitioner-Example>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Practitioner" ]
+     ]
+  ] .
+
+<http://www.example.org/fhir/Organization/Organization-Example> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "Organization-Example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Organization-Example</p></div>"
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.name [ fhir:value "Organization-Example"] .
+
+<http://www.example.org/fhir/Location/Location-Example> a fhir:Location;
+  fhir:Resource.id [ fhir:value "Location-Example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>name</b>: Location-Example</p><p><b>managingOrganization</b>: <a href=\"#Organization_Organization-Example\">See above (Organization/Organization-Example)</a></p></div>"
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.name [ fhir:value "Location-Example"];
+  fhir:Location.managingOrganization [
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Organization/Organization-Example>;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-Example" ]
+  ] .
+
+<http://www.example.org/fhir/HealthcareService/HealthcareService-Example> a fhir:HealthcareService;
+  fhir:Resource.id [ fhir:value "HealthcareService-Example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>providedBy</b>: <a href=\"#Organization_Organization-Example\">See above (Organization/Organization-Example)</a></p><p><b>type</b>: <span title=\"Codes: \">567</span></p><p><b>location</b>: <a href=\"#Location_Location-Example\">See above (Location/Location-Example)</a></p></div>"
+  ];
+  fhir:HealthcareService.providedBy [
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Organization/Organization-Example>;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-Example" ]
+  ];
+  fhir:HealthcareService.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "567" ]
+     ]
+  ];
+  fhir:HealthcareService.location [
+     fhir:index 0;
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Location/Location-Example>;
+     fhir:Reference.reference [ fhir:value "Location/Location-Example" ]
+  ] .
+
+<http://www.example.org/fhir/PractitionerRole/PractitionerRole-Example> a fhir:PractitionerRole;
+  fhir:Resource.id [ fhir:value "PractitionerRole-Example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>practitioner</b>: <a href=\"#Practitioner_Practitioner-Example\">See above (Practitioner/Practitioner-Example)</a></p><p><b>organization</b>: <a href=\"#Organization_Organization-Example\">See above (Organization/Organization-Example)</a></p><p><b>location</b>: <a href=\"#Location_Location-Example\">See above (Location/Location-Example)</a></p></div>"
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Practitioner/Practitioner-Example>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-Example" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Organization/Organization-Example>;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-Example" ]
+  ];
+  fhir:PractitionerRole.location [
+     fhir:index 0;
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Location/Location-Example>;
+     fhir:Reference.reference [ fhir:value "Location/Location-Example" ]
+  ] .
+
+<http://www.example.org/fhir/Practitioner/Practitioner-Example> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Practitioner-Example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Hello, World!</p><p><b>gender</b>: other</p></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Hello, World!" ]
+  ];
+  fhir:Practitioner.gender [ fhir:value "other"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://profiles.ihe.net/ITI/mCSD/Bundle/Example-CoreOnly.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

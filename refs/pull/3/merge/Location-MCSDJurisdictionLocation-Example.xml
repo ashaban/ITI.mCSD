@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="MCSDJurisdictionLocation-Example"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>name</b>: MCSDJurisdictionLocation-Example</p><p><b>type</b>: <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}">Jurisdiction</span></p><p><b>physicalType</b>: <span title="Codes: ">PC</span></p><p><b>managingOrganization</b>: <a href="Organization-MCSDJurisdictionOrganization-Example.html">Generated Summary: active; <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}">Jurisdiction</span>; name: MCSDJurisdictionOrganization-Example</a></p></div>
+  </text>
+  <status value="active"/>
+  <name value="MCSDJurisdictionLocation-Example"/>
+  <type>
+    <coding>
+      <system value="urn:ietf:rfc:3986"/>
+      <code value="govt"/>
+    </coding>
+  </type>
+  <type>
+    <coding>
+      <system value="https://github.com/ihe/ITI.mCSD"/>
+      <code value="Jurisdiction"/>
+    </coding>
+  </type>
+  <physicalType>
+    <coding>
+      <code value="PC"/>
+    </coding>
+  </physicalType>
+  <managingOrganization>
+    <reference value="Organization/MCSDJurisdictionOrganization-Example"/>
+  </managingOrganization>
+</Location>

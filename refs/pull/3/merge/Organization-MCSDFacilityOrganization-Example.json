@@ -1,0 +1,59 @@
+{
+  "resourceType": "Organization",
+  "id": "MCSDFacilityOrganization-Example",
+  "meta": {
+    "profile": [
+      "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>mCSD Additional Hierarchies extension for mCSD Organization.</b></p><p><b>value</b>: <span title=\"Codes: \">ihe-mcsd-hierarchy-type</span></p><p><b>value</b>: <a href=\"Organization-MCSDOrganization-ExamplePartner.html\">Generated Summary: active; <span title=\"Codes: \">govt</span>; name: Organization-ExamplePartner</a></p></blockquote><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 govt}\">govt</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p><p><b>name</b>: MCSDFacilityOrganization-Example</p><p><b>partOf</b>: <a href=\"Organization-MCSDJurisdictionOrganization-Example.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 govt}\">govt</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}\">Jurisdiction</span>; name: MCSDJurisdictionOrganization-Example</a></p></div>"
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "hierarchy-type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "ihe-mcsd-hierarchy-type"
+              }
+            ]
+          }
+        },
+        {
+          "url": "part-of",
+          "valueReference": {
+            "reference": "Organization/MCSDOrganization-ExamplePartner"
+          }
+        }
+      ],
+      "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:ietf:rfc:3986",
+          "code": "govt"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://github.com/ihe/ITI.mCSD",
+          "code": "Facility"
+        }
+      ]
+    }
+  ],
+  "name": "MCSDFacilityOrganization-Example",
+  "partOf": {
+    "reference": "Organization/MCSDJurisdictionOrganization-Example"
+  }
+}

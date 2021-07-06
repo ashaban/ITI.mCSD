@@ -1,0 +1,14 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Practitioner-Example",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Hello, World!</p><p><b>gender</b>: other</p></div>"
+  },
+  "name": [
+    {
+      "text": "Hello, World!"
+    }
+  ],
+  "gender": "other"
+}

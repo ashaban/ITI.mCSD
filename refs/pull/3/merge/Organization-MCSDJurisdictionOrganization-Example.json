@@ -1,0 +1,33 @@
+{
+  "resourceType": "Organization",
+  "id": "MCSDJurisdictionOrganization-Example",
+  "meta": {
+    "profile": [
+      "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 govt}\">govt</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}\">Jurisdiction</span></p><p><b>name</b>: MCSDJurisdictionOrganization-Example</p></div>"
+  },
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:ietf:rfc:3986",
+          "code": "govt"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://github.com/ihe/ITI.mCSD",
+          "code": "Jurisdiction"
+        }
+      ]
+    }
+  ],
+  "name": "MCSDJurisdictionOrganization-Example"
+}

@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IHE.MCSD.FHIR\Find Matching Care Services [ITI 90] - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ihe.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="ihe-logo" no-external="true" href="http://ihe.net">
+    <img height="71" alt="Visit the IHE website" src="assets/images/ihe-international.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" style="margin-top: 15px;" alt="Visit the IHE website" src="assets/images/ihe-logo.png"/> </a>
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Mobile Care Services Discovery</span><br/>0.2.0 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">mCSD Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="146_introduction.html">mCSD</a>
+      </li>
+      <li>
+        <a href="1461_actors_and_transactions.html">Actors and Transactions</a>
+      </li>
+      <li>
+        <a href="1462_actors_options.html">Actors Options</a>
+      </li>
+      <li>
+        <a href="1463_required_actor_groupings.html">Required Actor Groupings</a>
+      </li>
+      <li>
+        <a href="1464_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="1465_security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="1466_cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+      <li>
+        <a href="1467_deployment_considerations.html">Deployment Considerations</a>
+      </li>
+      <li>
+        <a href="a_issues.html">Open and Closed Issues</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Transactions<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ITI-90.html">Find Matching Care Services [ITI-90]</a>
+      </li>
+      <li>
+        <a href="ITI-91.html">Request Care Services Updates [ITI-91]</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Find Matching Care Services [ITI 90]</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Mobile Care Services Discovery - Local Development build (v0.2.0). See the <a href="http://profiles.ihe.net/ITI/mCSD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Find Matching Care Services [ITI 90]</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#2390-find-matching-care-services-iti-90" id="markdown-toc-2390-find-matching-care-services-iti-90">2:3.90 Find Matching Care Services [ITI-90]</a>    <ul>
+      <li><a href="#23901-scope" id="markdown-toc-23901-scope">2:3.90.1 Scope</a></li>
+      <li><a href="#23902-actor-roles" id="markdown-toc-23902-actor-roles">2:3.90.2 Actor Roles</a></li>
+      <li><a href="#23903-referenced-standards" id="markdown-toc-23903-referenced-standards">2:3.90.3 Referenced Standards</a></li>
+      <li><a href="#23904-messages" id="markdown-toc-23904-messages">2:3.90.4 Messages</a></li>
+      <li><a href="#23905-security-considerations" id="markdown-toc-23905-security-considerations">2:3.90.5 Security Considerations</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="2390-find-matching-care-services-iti-90">2:3.90 Find Matching Care Services [ITI-90]</h2>
+
+<h3 id="23901-scope">2:3.90.1 Scope</h3>
+
+<p>The Find Matching Care Services transaction returns a list of matching
+care services resources based on the query sent. A Care Services
+Selective Consumer initiates a Find Matching Care Services transaction
+against a Care Services Selective Supplier.</p>
+
+<h3 id="23902-actor-roles">2:3.90.2 Actor Roles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Actor:</strong></th>
+      <th>Care Services Selective Consumer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Role:</strong></td>
+      <td>Requests a list of resources from the Care Services Selective Supplier based on query parameters</td>
+    </tr>
+    <tr>
+      <td><strong>Actor:</strong></td>
+      <td>Care Services Selective Supplier</td>
+    </tr>
+    <tr>
+      <td><strong>Role:</strong></td>
+      <td>Accepts the query request and returns a list of matching resources.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="23903-referenced-standards">2:3.90.3 Referenced Standards</h3>
+
+<ul>
+  <li>
+    <p>HL7 FHIR standard Release 4 <a href="http://hl7.org/fhir/R4/index.html">http://hl7.org/fhir/R4/index.html</a></p>
+  </li>
+  <li>
+    <p>JSON – IETF RFC7159</p>
+  </li>
+  <li>
+    <p>XML</p>
+  </li>
+  <li>
+    <p>HTTP 1.1</p>
+  </li>
+</ul>
+
+<h3 id="23904-messages">2:3.90.4 Messages</h3>
+
+<p>Figure 2:3.90.4-1: Interaction Diagram</p>
+
+<h4 id="239041-find-matching-care-services-request-message">2:3.90.4.1 Find Matching Care Services Request Message</h4>
+
+<p>The Find Matching Care Services message is a FHIR search operation on
+the Organization, Location, Practitioner, PractitionerRole, and/or
+HealthcareService Resources.</p>
+
+<h5 id="2390411-trigger-events">2:3.90.4.1.1 Trigger Events</h5>
+
+<p>A Care Services Selective Consumer triggers a Find Matching Care
+Services Request to a Care Services Selective Supplier according to the
+business rules for the query. These business rules are outside the scope
+of this transaction.</p>
+
+<h5 id="2390412-message-semantics">2:3.90.4.1.2 Message Semantics</h5>
+
+<p>A Care Services Selective Consumer initiates a search request using HTTP
+GET as defined at <a href="http://hl7.org/fhir/R4/http.html#search">http://hl7.org/fhir/R4/http.html#search</a> on the
+Organization, Location, Practitioner, PractitionerRole, or
+HealthcareService Resources. The query parameters are identified below.
+A Care Services Selective Consumer may query any combination or subset
+of the parameters.</p>
+
+<p>A Care Services Selective Supplier shall support combinations of search
+parameters as defined at <a href="http://hl7.org/fhir/R4/search.html#combining">http://hl7.org/fhir/R4/search.html#combining</a>,
+“Composite Search Parameters.”</p>
+
+<p>A Care Services Selective Supplier shall support responding to a request
+for both the JSON and the XML messaging formats as defined in FHIR. A
+Care Services Selective Consumer shall accept either the JSON or the XML
+messaging formats as defined in FHIR. See ITI TF-2x: Appendix Z.6 for
+more details.</p>
+
+<p>A Care Services Selective Supplier shall implement the parameters
+described below. A Care Services Selective Supplier may choose to
+support additional query parameters beyond the subset listed below. Any
+additional query parameters supported shall be supported according to
+the core FHIR specification.</p>
+
+<p>See ITI TF-2x: Appendix W for informative implementation material for
+this transaction.</p>
+
+<h6 id="23904121-common-parameters">2:3.90.4.1.2.1 Common Parameters</h6>
+
+<p>The Care Services Selective Supplier shall support the :contains and
+:exact modifiers in all of the string query parameters below.</p>
+
+<p>The Care Services Selective Supplier shall support the following search
+parameters as defined at <a href="http://hl7.org/fhir/R4/search.html#all">http://hl7.org/fhir/R4/search.html#all</a>.</p>
+
+<p>_id</p>
+
+<p>_lastUpdated</p>
+
+<p>_profile</p>
+
+<p>The Care Services Selective Supplier shall also support the following
+prefixes for the _lastUpdated parameter: gt, lt, ge, le, sa, and eb.</p>
+
+<h6 id="23904122-organization-resource-message-semantics">2:3.90.4.1.2.2 Organization Resource Message Semantics</h6>
+
+<p>The Care Services Selective Supplier shall support the following search
+parameters on the Organization Resource as defined at
+<a href="http://hl7.org/fhir/R4/organization.html#search">http://hl7.org/fhir/R4/organization.html#search</a>. String parameter
+modifiers are defined at <a href="http://hl7.org/fhir/R4/search.html#string">http://hl7.org/fhir/R4/search.html#string</a>.
+The ihe-mcsd-hierarchy-* search parameters query the hierarchy
+extension identified by the following canonical URI
+http://ihe.net/fhir/StructureDefinition/IHE_mCSD_hierarchy_extension.</p>
+
+<p>active</p>
+
+<p>identifier</p>
+
+<p>name</p>
+
+<p>partof</p>
+
+<p>partof:above</p>
+
+<p>partof:below</p>
+
+<p>type</p>
+
+<p>partof.identifier</p>
+
+<p>partof.name</p>
+
+<p>_revInclude=Location:organization</p>
+
+<p>ihe-mcsd-hierarchy-type</p>
+
+<p>ihe-mcsd-hierarchy-partof</p>
+
+<p>ihe-mcsd-hierarchy-partof:above</p>
+
+<p>ihe-mcsd-hierarchy-partof:below</p>
+
+<h6 id="23904123-location-resource-message-semantics">2:3.90.4.1.2.3 Location Resource Message Semantics</h6>
+
+<p>The Care Services Selective Supplier shall support the following search
+parameters on the Location Resource as defined at
+<a href="http://hl7.org/fhir/R4/location.html#search">http://hl7.org/fhir/R4/location.html#search</a>. String parameter
+modifiers are defined at <a href="http://hl7.org/fhir/R4/search.html#string">http://hl7.org/fhir/R4/search.html#string</a>.</p>
+
+<p>identifier</p>
+
+<p>name</p>
+
+<p>organization</p>
+
+<p>partof</p>
+
+<p>partof:above</p>
+
+<p>partof:below</p>
+
+<p>status</p>
+
+<p>type</p>
+
+<p>partof.identifier</p>
+
+<p>partof.name</p>
+
+<p>organization.active</p>
+
+<p>organization.identifier</p>
+
+<p>organization.name</p>
+
+<p>_include=Location:organization</p>
+
+<h6 id="23904124-practitioner-resource-message-semantics">2:3.90.4.1.2.4 Practitioner Resource Message Semantics</h6>
+
+<p>The Care Services Selective Supplier shall support the following search
+parameters on the Practitioner Resource as defined at
+<a href="http://hl7.org/fhir/R4/practitioner.html#search">http://hl7.org/fhir/R4/practitioner.html#search</a>. String parameter
+modifiers are defined at <a href="http://hl7.org/fhir/R4/search.html#string">http://hl7.org/fhir/R4/search.html#string</a>.</p>
+
+<p>active</p>
+
+<p>identifier</p>
+
+<p>name</p>
+
+<p>given</p>
+
+<p>family</p>
+
+<h6 id="23904125-practitionerrole-resource-message-semantics">2:3.90.4.1.2.5 PractitionerRole Resource Message Semantics</h6>
+
+<p>The Care Services Selective Supplier shall support the following search
+parameters on the PractitionerRole Resource as defined at
+<a href="http://hl7.org/fhir/R4/practitionerrole.html#search">http://hl7.org/fhir/R4/practitionerrole.html#search</a>.</p>
+
+<p>active</p>
+
+<p>location</p>
+
+<p>organization</p>
+
+<p>practitioner</p>
+
+<p>role</p>
+
+<p>service</p>
+
+<p>specialty</p>
+
+<p>practitioner.identifier</p>
+
+<p>practitioner.name</p>
+
+<p>practitioner.given</p>
+
+<p>practitioner.family</p>
+
+<p>_include=PractitionerRole:practitioner</p>
+
+<p>organization.active</p>
+
+<p>organization.identifier</p>
+
+<p>organization.name</p>
+
+<p>location.status</p>
+
+<p>location.identifier</p>
+
+<p>location.name</p>
+
+<p>service.active</p>
+
+<p>service.indentifier</p>
+
+<p>service.location</p>
+
+<p>service.name</p>
+
+<p>service.organization</p>
+
+<h6 id="23904126-healthcareservice-resource-message-semantics">2:3.90.4.1.2.6 HealthcareService Resource Message Semantics</h6>
+
+<p>The Care Services Selective Supplier shall support the following search
+parameters on the HealthcareService Resource as defined at
+<a href="http://hl7.org/fhir/R4/healthcareservice.html#search">http://hl7.org/fhir/R4/healthcareservice.html#search</a>. String parameter
+modifiers are defined at <a href="http://hl7.org/fhir/R4/search.html#string">http://hl7.org/fhir/R4/search.html#string</a>.</p>
+
+<p>active</p>
+
+<p>identifier</p>
+
+<p>location</p>
+
+<p>name</p>
+
+<p>organization</p>
+
+<p>service-type</p>
+
+<p>organization.active</p>
+
+<p>organization.identifier</p>
+
+<p>organization.name</p>
+
+<p>location.status</p>
+
+<p>location.identifier</p>
+
+<p>location.name</p>
+
+<h6 id="23904127-location-distance-option-message-semantics">2:3.90.4.1.2.7 Location Distance Option Message Semantics</h6>
+
+<p>The Care Services Selective Supplier supporting the Location Distance
+Option shall support the following search parameters on the Location
+Resource as defined at <a href="http://hl7.org/fhir/R4/location.html#search">http://hl7.org/fhir/R4/location.html#search</a>.</p>
+
+<p>near</p>
+
+<h5 id="2390413-expected-actions">2:3.90.4.1.3 Expected Actions</h5>
+
+<p>The Care Services Selective Supplier shall process the query to discover
+the resources that match the search parameters given, and return a
+response as per Section 2:3.90.4.2 or an error as per
+<a href="http://hl7.org/fhir/R4/search.html#errors">http://hl7.org/fhir/R4/search.html#errors</a>.</p>
+
+<h4 id="239042-find-matching-care-services-response-message">2:3.90.4.2 Find Matching Care Services Response Message</h4>
+
+<h5 id="2390421-trigger-events">2:3.90.4.2.1 Trigger Events</h5>
+
+<p>The Care Services Selective Supplier sends the Find Matching Care
+Services Response to the Care Services Selective Consumer when results
+to the query are ready.</p>
+
+<h5 id="2390422-message-semantics">2:3.90.4.2.2 Message Semantics</h5>
+
+<p>The Care Services Selective Supplier shall support the search response
+message as defined at <a href="http://hl7.org/fhir/R4/http.html#search">http://hl7.org/fhir/R4/http.html#search</a> on the
+following Resources.</p>
+
+<ul>
+  <li>
+    <p>Organization, as defined at
+<a href="http://hl7.org/fhir/R4/organization.html">http://hl7.org/fhir/R4/organization.html</a></p>
+  </li>
+  <li>
+    <p>Location, as defined at <a href="http://hl7.org/fhir/R4/location.html">http://hl7.org/fhir/R4/location.html</a></p>
+  </li>
+  <li>
+    <p>Practitioner, as defined at
+<a href="http://hl7.org/fhir/R4/practitioner.html">http://hl7.org/fhir/R4/practitioner.html</a></p>
+  </li>
+  <li>
+    <p>PractitionerRole, as defined at
+<a href="http://hl7.org/fhir/R4/practitionerrole.html">http://hl7.org/fhir/R4/practitionerrole.html</a></p>
+  </li>
+  <li>
+    <p>HealthcareService, as defined at
+<a href="http://hl7.org/fhir/R4/healthcareservice.html">http://hl7.org/fhir/R4/healthcareservice.html</a></p>
+
+    <p>All References (reference.reference element) to Resources defined in
+this transaction shall be populated with an accessible URL (see
+<a href="https://www.hl7.org/fhir/references-definitions.html#Reference.reference">https://www.hl7.org/fhir/references-definitions.html#Reference.reference</a>),
+unless the referenced resource is not present on a server accessible
+to the client.</p>
+  </li>
+</ul>
+
+<h6 id="23904221-fhir-organization-resource-constraints">2:3.90.4.2.2.1 FHIR Organization Resource Constraints</h6>
+
+<p>A Care Services Selective Consumer may query on Organization Resources.
+A Care Services Selective Supplier shall return a Bundle of matching
+Organization Resources. The Organization Resource shall be further
+constrained as described in Table 2:3.90.4.2.2.1-1. The Element column in
+Table 2:3.90.4.2.2.1-1 references the object model defined at
+<a href="http://hl7.org/fhir/R4/organization.html#resource">http://hl7.org/fhir/R4/organization.html#resource</a>.</p>
+
+<p>Table 2:3.90.4.2.2.1-1: Organization Resource Constraints</p>
+
+<table border="1" borderspacing="0" style="border: 1px solid black; border-collapse: collapse">
+<thead>
+<tr class="header">
+<th><p>Element</p>
+<p>&amp;</p>
+<p>Cardinality</p></th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>meta.profile</p>
+<p>[1..*]</p></td>
+<td><p>There shall be at least one entry with the value:</p>
+<p>http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Organization</p></td>
+</tr>
+<tr class="even">
+<td><p>type</p>
+<p>[1..*]</p></td>
+<td><p>A code that describes the type of Organization.</p>
+<p>CodeableConcept</p></td>
+</tr>
+<tr class="odd">
+<td><p>name</p>
+<p>[1..1]</p></td>
+<td>string</td>
+</tr>
+<tr class="even">
+<td>partOf<br />
+[0..1]</td>
+<td><p>If the Organization belongs to a single hierarchy, the partOf element shall be used.</p>
+<p>Reference (Organization)</p></td>
+</tr>
+<tr class="odd">
+<td><p>extension</p>
+<p>[0..*]</p></td>
+<td><p>If there are additional hierarchies (such as funding source), include them in the extension with the following details:</p>
+<p>Set the url to the canonical URI for this extension</p>
+<p>url = “<a href="http://ihe.net/fhir/StructureDefinition/IHE_mCSD_hierarchy_extension">http://ihe.net/fhir/StructureDefinition/IHE_mCSD_hierarchy_extension</a>”</p>
+<p>Set the sub-extension values</p>
+<p>hierarchy-type = valueCodeableConcept</p>
+<p>part-of = valueReference(Organization)</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>A Care Services Selective Consumer may query on Organization Resources
+when working with Facilities. A Care Services Selective Supplier shall
+return a Bundle of matching Organization Resources when working with
+Facilities. In addition to the constraints in Table 2:3.90.4.2.2.1-1, the
+FHIR Organization Resource shall be further constrained as described in
+Table 2:3.90.4.2.2.1-2. The Element column in Table 2:3.90.4.2.2.1-2
+references the object model defined at
+<a href="http://hl7.org/fhir/R4/organization.html#resource">http://hl7.org/fhir/R4/organization.html#resource</a>.</p>
+
+<p>Table 2:3.90.4.2.2.1-2: Additional Organization Resource Constraints for
+Facilities</p>
+
+<table border="1" borderspacing="0" style="border: 1px solid black; border-collapse: collapse">
+<thead>
+<tr class="header">
+<th><p>Element</p>
+<p>&amp;</p>
+<p>Cardinality</p></th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>meta.profile [2..*]</td>
+<td><p>In addition, there shall be one entry with the value:</p>
+<p>http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityOrganization</p></td>
+</tr>
+<tr class="even">
+<td><p>type</p>
+<p>[2..*]</p></td>
+<td><p>In addition, there shall be one type with the following value:</p>
+<p>system = "urn:ietf:rfc:3986"</p>
+<p>code = "<a href="http://ihe.net/SYSTEM">urn:ihe:iti:mcsd:2019:facility</a>"</p></td>
+</tr>
+</tbody>
+</table>
+
+<h6 id="23904222-fhir-location-resource-constraints">2:3.90.4.2.2.2 FHIR Location Resource Constraints</h6>
+
+<p>A Care Services Selective Consumer may query on Location Resources. A
+Care Services Selective Supplier shall return a Bundle of matching
+Location Resources. The Location Resource shall be further constrained
+as described in Table 2:3.90.4.2.2.2-1. The Element column in Table
+2:3.90.4.2.2.2-1 references the object model defined at
+<a href="http://hl7.org/fhir/R4/location.html#resource">http://hl7.org/fhir/R4/location.html#resource</a>.</p>
+
+<p>Table 2:3.90.4.2.2.2-1: Location Resource Constraints</p>
+
+<table border="1" borderspacing="0" style="border: 1px solid black; border-collapse: collapse">
+<thead>
+<tr class="header">
+<th><p>Element</p>
+<p>&amp;</p>
+<p>Cardinality</p></th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>meta.profile</p>
+<p>[1..*]</p></td>
+<td><p>There shall be at least one entry with the value:</p>
+<p>http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location</p></td>
+</tr>
+<tr class="even">
+<td><p>type</p>
+<p>[1..*]</p></td>
+<td><p>A code that describes the type of Organization.</p>
+<p>CodeableConcept</p></td>
+</tr>
+<tr class="odd">
+<td><p>physicalType</p>
+<p>[1..1]</p></td>
+<td><p>A code that describes the physical type of Organization.</p>
+<p>CodeableConcept</p></td>
+</tr>
+<tr class="even">
+<td><p>name</p>
+<p>[1..1]</p></td>
+<td>string</td>
+</tr>
+<tr class="odd">
+<td><p>status</p>
+<p>[1..1]</p></td>
+<td>code (active| suspended| inactive)</td>
+</tr>
+</tbody>
+</table>
+
+<p>When the resource is a Facility, the Location Resource shall be paired
+with an Organization Resource using the managingOrganization element in
+Location. A Care Services Selective Consumer may query on Location
+Resources when working with Facilities. A Care Services Selective
+Supplier shall return a Bundle of matching Location Resources when
+working with Facilities. In addition to the constraints in Table
+2:3.90.4.2.2.2-1, the FHIR Location Resource shall be further constrained
+as described in Table 2:3.90.4.2.2.2-2. The Element column in Table
+2:3.90.4.2.2.2-2 references the object model defined at
+<a href="http://hl7.org/fhir/R4/location.html#resource">http://hl7.org/fhir/R4/location.html#resource</a>.</p>
+
+<p>Table 2:3.90.4.2.2.2-2: Additional Location Resource Constraints for
+Facilities</p>
+
+<table border="1" borderspacing="0" style="border: 1px solid black; border-collapse: collapse">
+<thead>
+<tr class="header">
+<th><p>Element</p>
+<p>&amp;</p>
+<p>Cardinality</p></th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>meta.profile</p>
+<p>[2..*]</p></td>
+<td><p>In addition, there shall be one entry with the value:</p>
+<p>http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation</p></td>
+</tr>
+<tr class="even">
+<td><p>type</p>
+<p>[2..*]</p></td>
+<td><p>In addition, there shall be one type with the following value:</p>
+<p>system = "urn:ietf:rfc:3986"</p>
+<p>code = "<a href="http://ihe.net/SYSTEM">urn:ihe:iti:mcsd:2019:facility</a>"</p></td>
+</tr>
+<tr class="odd">
+<td><p>managingOrganization</p>
+<p>[1..1]</p></td>
+<td><p>The reference to the Organization resource for this facility.</p>
+<p>Reference(Organization)</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>When supporting the Location Distance Option. The Location Resource
+shall be further constrained as described in Table 2:3.90.4.2.2.2-3. The
+Element column in Table 2:3.90.4.2.2.2-3 references the object model
+defined at <a href="http://hl7.org/fhir/R4/location.html#resource">http://hl7.org/fhir/R4/location.html#resource</a>.</p>
+
+<p>Table 2:3.90.4.2.2.2-3: Location Resource Constraints with Location
+Distance Option</p>
+
+<table border="1" borderspacing="0" style="border: 1px solid black; border-collapse: collapse">
+<thead>
+<tr class="header">
+<th><p>Element</p>
+<p>&amp;</p>
+<p>Cardinality</p></th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>meta.profile</p>
+<p>[2..*]</p></td>
+<td><p>There shall be at least one entry with the value:</p>
+<p>http://ihe.net/fhir/StructureDefinition/IHE_mCSD_LocationDistance</p></td>
+</tr>
+<tr class="even">
+<td><p>position</p>
+<p>[1..1]</p></td>
+<td>BackboneElement</td>
+</tr>
+</tbody>
+</table>
+
+<h6 id="23904223-fhir-practitioner-resource-constraints">2:3.90.4.2.2.3 FHIR Practitioner Resource Constraints</h6>
+
+<p>A Care Services Selective Consumer may query on Practitioner Resources.
+A Care Services Selective Supplier shall return a Bundle of matching
+Practitioner Resources. The Practitioner Resource shall be further
+constrained as described in Table 2:3.90.4.2.2.3-1. The Element column in
+Table 2:3.90.4.2.2.3-1 references the object model defined at
+<a href="http://hl7.org/fhir/R4/practitioner.html#resource">http://hl7.org/fhir/R4/practitioner.html#resource</a>.</p>
+
+<p>Table 2:3.90.4.2.2.3-1: Practitioner Resource Constraints</p>
+
+<table border="1" borderspacing="0" style="border: 1px solid black; border-collapse: collapse">
+<thead>
+<tr class="header">
+<th><p>Element</p>
+<p>&amp;</p>
+<p>Cardinality</p></th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>meta.profile</p>
+<p>[1..*]</p></td>
+<td><p>There shall be at least one entry with the value:</p>
+<p>http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Practitioner</p></td>
+</tr>
+<tr class="even">
+<td><p>name</p>
+<p>[1..*]</p></td>
+<td>HumanName</td>
+</tr>
+</tbody>
+</table>
+
+<h6 id="23904224-fhir-practitionerrole-resource-constraints">2:3.90.4.2.2.4 FHIR PractitionerRole Resource Constraints</h6>
+
+<p>A Care Services Selective Consumer may query on PractitionerRole
+Resources. A Care Services Selective Supplier shall return a Bundle of
+matching PractitionerRole Resources. The PractitionerRole Resource shall
+be further constrained as described in Table 2:3.90.4.2.2.4-1. The Element
+column in Table 2:3.90.4.2.2.4-1 references the object model defined at
+<a href="http://hl7.org/fhir/R4/practitionerrole.html#resource">http://hl7.org/fhir/R4/practitionerrole.html#resource</a>.</p>
+
+<p>Table 2:3.90.4.2.2.4-1: PractitionerRole Resource Constraints</p>
+
+<table border="1" borderspacing="0" style="border: 1px solid black; border-collapse: collapse">
+<thead>
+<tr class="header">
+<th><p>Element</p>
+<p>&amp;</p>
+<p>Cardinality</p></th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>meta.profile</p>
+<p>[1..*]</p></td>
+<td><p>There shall be at least one entry with the value:</p>
+<p>http://ihe.net/fhir/StructureDefinition/IHE_mCSD_PractitionerRole</p></td>
+</tr>
+<tr class="even">
+<td><p>code</p>
+<p>[1..*]</p></td>
+<td>CodeableConcept</td>
+</tr>
+</tbody>
+</table>
+
+<h6 id="23904225-fhir-healthcareservice-resource-constraints">2:3.90.4.2.2.5 FHIR HealthcareService Resource Constraints</h6>
+
+<p>A Care Services Selective Consumer may query on HealthcareService
+Resources. A Care Services Selective Supplier shall return a Bundle of
+matching HealthcareService Resources. The HealthcareService Resource
+shall be further constrained as described in Table 2:3.90.4.2.2.5-1. The
+Element column in Table 2:3.90.4.2.2.5-1 references the object model
+defined at <a href="http://hl7.org/fhir/R4/healthcareservice.html#resource">http://hl7.org/fhir/R4/healthcareservice.html#resource</a>.</p>
+
+<p>Table 2:3.90.4.2.2.5-1: HealthcareService Resource Constraints</p>
+
+<table border="1" borderspacing="0" style="border: 1px solid black; border-collapse: collapse">
+<thead>
+<tr class="header">
+<th><p>Element</p>
+<p>&amp;</p>
+<p>Cardinality</p></th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>meta.profile</p>
+<p>[1..*]</p></td>
+<td><p>There shall be at least one entry with the value:</p>
+<p>http://ihe.net/fhir/StructureDefinition/IHE_mCSD_HealthcareService</p></td>
+</tr>
+<tr class="even">
+<td><p>type</p>
+<p>[1..*]</p></td>
+<td>CodeableConcept</td>
+</tr>
+<tr class="odd">
+<td><p>name</p>
+<p>[1..1]</p></td>
+<td>string</td>
+</tr>
+</tbody>
+</table>
+
+<h5 id="2390423-expected-actions">2:3.90.4.2.3 Expected Actions</h5>
+
+<p>The Care Services Selective Consumer has received the response and
+continues with its workflow.</p>
+
+<h3 id="23905-security-considerations">2:3.90.5 Security Considerations</h3>
+
+<p>See ITI TF-1: 46.5 for security considerations for the mCSD Profile.</p>
+
+<p>See ITI TF-2x: Appendix Z.8 for common mobile security considerations.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">IHE International - ITI domain Group</a>.  Package ihe.mcsd.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 6, 2021 18:18+0000">2021-07-06</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: #81BEF7" target="_blank" href="http://profiles.ihe.net/ITI/mCSD/history.html">Version History</a></a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="https://wiki.ihe.net/index.php/Category:CPs">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

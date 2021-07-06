@@ -1,0 +1,25 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "HealthcareService-Example",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>providedBy</b>: <a href=\"Organization-Organization-Example.html\">Generated Summary: active; name: Organization-Example</a></p><p><b>type</b>: <span title=\"Codes: \">567</span></p><p><b>location</b>: <a href=\"Location-Location-Example.html\">Generated Summary: status: active; name: Location-Example</a></p></div>"
+  },
+  "providedBy": {
+    "reference": "Organization/Organization-Example"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "567"
+        }
+      ]
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/Location-Example"
+    }
+  ]
+}

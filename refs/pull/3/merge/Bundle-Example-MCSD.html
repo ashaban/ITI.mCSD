@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IHE.MCSD.FHIR\ - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ihe.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"15.31"}
+    h3,h4,h5,h6{--heading-prefix:"15.31"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="ihe-logo" no-external="true" href="http://ihe.net">
+    <img height="71" alt="Visit the IHE website" src="assets/images/ihe-international.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" style="margin-top: 15px;" alt="Visit the IHE website" src="assets/images/ihe-logo.png"/> </a>
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Mobile Care Services Discovery</span><br/>0.2.0 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">mCSD Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="146_introduction.html">mCSD</a>
+      </li>
+      <li>
+        <a href="1461_actors_and_transactions.html">Actors and Transactions</a>
+      </li>
+      <li>
+        <a href="1462_actors_options.html">Actors Options</a>
+      </li>
+      <li>
+        <a href="1463_required_actor_groupings.html">Required Actor Groupings</a>
+      </li>
+      <li>
+        <a href="1464_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="1465_security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="1466_cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+      <li>
+        <a href="1467_deployment_considerations.html">Deployment Considerations</a>
+      </li>
+      <li>
+        <a href="a_issues.html">Open and Closed Issues</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Transactions<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ITI-90.html">Find Matching Care Services [ITI-90]</a>
+      </li>
+      <li>
+        <a href="ITI-91.html">Request Care Services Updates [ITI-91]</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b></b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Mobile Care Services Discovery - Local Development build (v0.2.0). See the <a href="http://profiles.ihe.net/ITI/mCSD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="Bundle-Example-MCSD.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-Example-MCSD.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-Example-MCSD.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Bundle: </h2>
+
+
+  
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div><p>Bundle Example-MCSD of type transaction</p><a name="http-//www.example.org/fhir/Organization/MCSDJurisdictionOrganization-Example"> </a><a name="Organization_MCSDJurisdictionOrganization-Example"> </a><hr/><p>Entry 1 - Full URL = http://www.example.org/fhir/Organization/MCSDJurisdictionOrganization-Example</p><p>Request:</p><pre>PUT Organization
+</pre><p>Resource Organization:</p><blockquote><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}">Jurisdiction</span></p><p><b>name</b>: MCSDJurisdictionOrganization-Example</p></blockquote><a name="http-//www.example.org/fhir/Location/MCSDJurisdictionLocation-Example"> </a><a name="Location_MCSDJurisdictionLocation-Example"> </a><hr/><p>Entry 2 - Full URL = http://www.example.org/fhir/Location/MCSDJurisdictionLocation-Example</p><p>Request:</p><pre>PUT Location
+</pre><p>Resource Location:</p><blockquote><p><b>Generated Narrative</b></p><p><b>status</b>: ACTIVE</p><p><b>name</b>: MCSDJurisdictionLocation-Example</p><p><b>type</b>: <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}">Jurisdiction</span></p><p><b>physicalType</b>: <span title="Codes: ">PC</span></p><p><b>managingOrganization</b>: <a href="Organization-MCSDJurisdictionOrganization-Example.html">Generated Summary: active; <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}">Jurisdiction</span>; name: MCSDJurisdictionOrganization-Example</a></p></blockquote><a name="http-//www.example.org/fhir/Organization/MCSDOrganization-ExamplePartner"> </a><a name="Organization_MCSDOrganization-ExamplePartner"> </a><hr/><p>Entry 3 - Full URL = http://www.example.org/fhir/Organization/MCSDOrganization-ExamplePartner</p><p>Request:</p><pre>PUT Organization
+</pre><p>Resource Organization:</p><blockquote><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: ">govt</span></p><p><b>name</b>: Organization-ExamplePartner</p></blockquote><a name="http-//www.example.org/fhir/Organization/MCSDFacilityOrganization-Example"> </a><a name="Organization_MCSDFacilityOrganization-Example"> </a><hr/><p>Entry 4 - Full URL = http://www.example.org/fhir/Organization/MCSDFacilityOrganization-Example</p><p>Request:</p><pre>PUT Organization
+</pre><p>Resource Organization:</p><blockquote><p><b>Generated Narrative</b></p><blockquote><p><b>mCSD Additional Hierarchies extension for mCSD Organization.</b></p><p><b>value</b>: <span title="Codes: ">ihe-mcsd-hierarchy-type</span></p><p><b>value</b>: <a href="Organization-MCSDOrganization-ExamplePartner.html">Generated Summary: active; <span title="Codes: ">govt</span>; name: Organization-ExamplePartner</a></p></blockquote><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span></p><p><b>name</b>: MCSDFacilityOrganization-Example</p><p><b>partOf</b>: <a href="Organization-MCSDJurisdictionOrganization-Example.html">Generated Summary: active; <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}">Jurisdiction</span>; name: MCSDJurisdictionOrganization-Example</a></p></blockquote><a name="http-//www.example.org/fhir/Location/MCSDFacilityLocation-Example"> </a><a name="Location_MCSDFacilityLocation-Example"> </a><hr/><p>Entry 5 - Full URL = http://www.example.org/fhir/Location/MCSDFacilityLocation-Example</p><p>Request:</p><pre>PUT Location
+</pre><p>Resource Location:</p><blockquote><p><b>Generated Narrative</b></p><p><b>status</b>: ACTIVE</p><p><b>name</b>: MCSDFacilityLocation-Example</p><p><b>type</b>: <span title="Codes: {urn:ietf:rfc:3986 HOSP}">HOSP</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span></p><p><b>physicalType</b>: <span title="Codes: ">PC</span></p><p><b>managingOrganization</b>: <a href="Organization-MCSDFacilityOrganization-Example.html">Generated Summary: active; <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span>; name: MCSDFacilityOrganization-Example</a></p></blockquote><a name="http-//www.example.org/fhir/HealthcareService/MCSDHealthcareService-Example"> </a><a name="HealthcareService_MCSDHealthcareService-Example"> </a><hr/><p>Entry 6 - Full URL = http://www.example.org/fhir/HealthcareService/MCSDHealthcareService-Example</p><p>Request:</p><pre>PUT HealthcareService
+</pre><p>Resource HealthcareService:</p><blockquote><p><b>Generated Narrative</b></p><p><b>type</b>: <span title="Codes: ">General Practice</span></p><p><b>location</b>: <a href="Location-MCSDFacilityLocation-Example.html">Generated Summary: status: active; name: MCSDFacilityLocation-Example; <span title="Codes: {urn:ietf:rfc:3986 HOSP}">HOSP</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span>; <span title="Codes: ">PC</span></a></p><p><b>name</b>: ANC</p></blockquote><a name="http-//www.example.org/fhir/PractitionerRole/MCSDPractitionerRole-Example"> </a><a name="PractitionerRole_MCSDPractitionerRole-Example"> </a><hr/><p>Entry 7 - Full URL = http://www.example.org/fhir/PractitionerRole/MCSDPractitionerRole-Example</p><p>Request:</p><pre>PUT PractitionerRole
+</pre><p>Resource PractitionerRole:</p><blockquote><p><b>Generated Narrative</b></p><p><b>practitioner</b>: <a href="Practitioner-MCSDPractitioner-Example.html">Generated Summary: Wil E. Coyote</a></p><p><b>organization</b>: <a href="Organization-MCSDFacilityOrganization-Example.html">Generated Summary: active; <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span>; name: MCSDFacilityOrganization-Example</a></p><p><b>code</b>: <span title="Codes: ">nurse</span></p><p><b>location</b>: <a href="Location-MCSDFacilityLocation-Example.html">Generated Summary: status: active; name: MCSDFacilityLocation-Example; <span title="Codes: {urn:ietf:rfc:3986 HOSP}">HOSP</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span>; <span title="Codes: ">PC</span></a></p><p><b>healthcareService</b>: <a href="HealthcareService-MCSDHealthcareService-Example.html">Generated Summary: <span title="Codes: ">General Practice</span>; name: ANC</a></p></blockquote><a name="http-//www.example.org/fhir/Practitioner/MCSDPractitioner-Example"> </a><a name="Practitioner_MCSDPractitioner-Example"> </a><hr/><p>Entry 8 - Full URL = http://www.example.org/fhir/Practitioner/MCSDPractitioner-Example</p><p>Request:</p><pre>PUT Practitioner
+</pre><p>Resource Practitioner:</p><blockquote><p><b>Generated Narrative</b></p><p><b>name</b>: Wil E. Coyote</p></blockquote></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">IHE International - ITI domain Group</a>.  Package ihe.mcsd.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 6, 2021 18:18+0000">2021-07-06</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: #81BEF7" target="_blank" href="http://profiles.ihe.net/ITI/mCSD/history.html">Version History</a></a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="https://wiki.ihe.net/index.php/Category:CPs">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

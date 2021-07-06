@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="MCSDJurisdictionOrganization-Example"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}">Jurisdiction</span></p><p><b>name</b>: MCSDJurisdictionOrganization-Example</p></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="urn:ietf:rfc:3986"/>
+      <code value="govt"/>
+    </coding>
+  </type>
+  <type>
+    <coding>
+      <system value="https://github.com/ihe/ITI.mCSD"/>
+      <code value="Jurisdiction"/>
+    </coding>
+  </type>
+  <name value="MCSDJurisdictionOrganization-Example"/>
+</Organization>

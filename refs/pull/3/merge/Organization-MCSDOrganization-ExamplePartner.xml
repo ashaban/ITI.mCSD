@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="MCSDOrganization-ExamplePartner"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: ">govt</span></p><p><b>name</b>: Organization-ExamplePartner</p></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <code value="govt"/>
+    </coding>
+  </type>
+  <name value="Organization-ExamplePartner"/>
+</Organization>

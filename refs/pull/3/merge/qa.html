@@ -1,0 +1,1160 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 74, warn = 42, info = 24 -->
+<head>
+  <title>IHE.mCSD : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for IHE.mCSD</h1>
+ <p>Generated Tue Jul 06 18:19:13 UTC 2021, FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = <a href="http://profiles.ihe.net/ITI/mCSD">http://profiles.ihe.net/ITI/mCSD</a> (<a href="http://profiles.ihe.net/ITI/mCSD/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.76</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ihe.mcsd.fhir, Canonical = http://profiles.ihe.net/ITI/mCSD</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.2.0: <span stlye="color: marron; font-weight: bold">No entry in the package-list.json file for this version</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ihe.mcsd.fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://profiles.ihe.net/ITI/mCSD</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: ihe.fhir.template#0.3.1 -&gt; fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2019+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://profiles.ihe.net/ITI/mCSD (Problem #1 with package-list.json at http://profiles.ihe.net/ITI/mCSD: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 12 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 74, warn = 42, info = 24</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>18</b></td><td><b>15</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-Example-CoreOnly"><b>/github/workspace/fsh-generated/resources/Bundle-Example-CoreOnly</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-Example-MCSD"><b>/github/workspace/fsh-generated/resources/Bundle-Example-MCSD</b></a></td><td><b>11</b></td><td><b>6</b></td><td><b>16</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_HealthcareService-HealthcareService-Example"><b>/github/workspace/fsh-generated/resources/HealthcareService-HealthcareService-Example</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_HealthcareService-MCSDHealthcareService-Example"><b>/github/workspace/fsh-generated/resources/HealthcareService-MCSDHealthcareService-Example</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Location-Location-Example"><b>/github/workspace/fsh-generated/resources/Location-Location-Example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Location-MCSDFacilityLocation-Example"><b>/github/workspace/fsh-generated/resources/Location-MCSDFacilityLocation-Example</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Location-MCSDJurisdictionLocation-Example"><b>/github/workspace/fsh-generated/resources/Location-MCSDJurisdictionLocation-Example</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Organization-MCSDFacilityOrganization-Example"><b>/github/workspace/fsh-generated/resources/Organization-MCSDFacilityOrganization-Example</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Organization-MCSDJurisdictionOrganization-Example"><b>/github/workspace/fsh-generated/resources/Organization-MCSDJurisdictionOrganization-Example</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Organization-MCSDOrganization-ExamplePartner"><b>/github/workspace/fsh-generated/resources/Organization-MCSDOrganization-ExamplePartner</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Organization-Organization-Example"><b>/github/workspace/fsh-generated/resources/Organization-Organization-Example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Practitioner-MCSDPractitioner-Example"><b>/github/workspace/fsh-generated/resources/Practitioner-MCSDPractitioner-Example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Practitioner-Practitioner-Example"><b>/github/workspace/fsh-generated/resources/Practitioner-Practitioner-Example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_PractitionerRole-MCSDPractitionerRole-Example"><b>/github/workspace/fsh-generated/resources/PractitionerRole-MCSDPractitionerRole-Example</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_PractitionerRole-PractitionerRole-Example"><b>/github/workspace/fsh-generated/resources/PractitionerRole-PractitionerRole-Example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_SearchParameter-IHE.mCSD.Organization.HierarchyPartOf"><b>/github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_SearchParameter-IHE.mCSD.Organization.HierarchyType"><b>/github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyType</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.FacilityLocation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.FacilityOrganization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.HealthcareService"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.JurisdictionLocation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.JurisdictionOrganization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Location"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.LocationDistance"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Organization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.OrganizationHierarchy"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Practitioner"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.PractitionerRole"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_ihe-supplement"><b>/github/workspace/input/ihe-supplement</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance"><b>/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.definition.parameter[23].value</b></td><td><b>error</b></td><td title=""><b>Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Practitioner/Practitioner-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/Practitioner-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource PractitionerRole/PractitionerRole-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/PractitionerRole-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource SearchParameter/IHE.mCSD.Organization.HierarchyType.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Location/Location-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Location/Location-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource HealthcareService/HealthcareService-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/HealthcareService-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Location/MCSDJurisdictionLocation-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Location/MCSDJurisdictionLocation-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Organization/MCSDOrganization-ExamplePartner.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/MCSDOrganization-ExamplePartner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Organization/Organization-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/Organization-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource HealthcareService/MCSDHealthcareService-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/MCSDHealthcareService-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Organization/MCSDJurisdictionOrganization-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/MCSDJurisdictionOrganization-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/Example-MCSD.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-MCSD.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource PractitionerRole/MCSDPractitionerRole-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/MCSDPractitionerRole-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Organization/MCSDFacilityOrganization-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/MCSDFacilityOrganization-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Practitioner/MCSDPractitioner-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/MCSDPractitioner-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource SearchParameter/IHE.mCSD.Organization.HierarchyPartOf.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/Example-CoreOnly.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-CoreOnly.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Location/MCSDFacilityLocation-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Location/MCSDFacilityLocation-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-Example-CoreOnly"> </a>
+<h2><a href="Bundle-Example-CoreOnly.html">/github/workspace/fsh-generated/resources/Bundle-Example-CoreOnly.json</a></h2>
+ <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/location.html">Location</a></li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.ofType(HealthcareService).type[0].coding[0] (l55/c16)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-Example-MCSD"> </a>
+<h2><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></h2>
+ <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-IHE.mCSD.JurisdictionOrganization.html">mCSD Organization for Jurisdictions</a> (per meta) and <i>this.</i><a href="StructureDefinition-IHE.mCSD.JurisdictionOrganization.html">mCSD Organization for Jurisdictions</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/location.html">Location</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.JurisdictionLocation.html">mCSD Location for Jurisdictions</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-IHE.mCSD.Organization.html">mCSD Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-IHE.mCSD.Organization.html">mCSD Organization</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-IHE.mCSD.FacilityOrganization.html">mCSD Organization for Facilities</a> (per meta) and <i>this.</i><a href="StructureDefinition-IHE.mCSD.FacilityOrganization.html">mCSD Organization for Facilities</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/location.html">Location</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.FacilityLocation.html">mCSD Location for Facilities</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.HealthcareService.html">mCSD HealthcareService</a> (per meta)</li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.PractitionerRole.html">mCSD PractitionerRole</a> (per meta)</li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.Practitioner.html">mCSD Practitioner</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0] (l23/c16)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(Organization).type[1].coding[0] (l31/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[0].resource.ofType(Organization).type[1] (l29/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization</b> <span id="sl36" class="flip" onclick="flip('l36')">Show Reasoning</span><div id="l36" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code (l26/c16)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Location).type[0].coding[0] (l59/c16)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[1].resource.ofType(Location).type[1].coding[0] (l67/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource.ofType(Location).physicalType.coding[0] (l81/c14)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[1].resource.ofType(Location).managingOrganization (l78/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Organization/MCSDJurisdictionOrganization-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl41" class="flip" onclick="flip('l41')">Show Reasoning</span><div id="l41" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[1].resource.ofType(Location).type[1] (l65/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation</b> <span id="sl42" class="flip" onclick="flip('l42')">Show Reasoning</span><div id="l42" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation<ul><li>Bundle.entry[1].resource.ofType(Location).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Location).type[0].coding[0].code (l62/c16)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Location).managingOrganization (l78/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile Organization/MCSDJurisdictionOrganization-Example among choices: https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[1].resource.ofType(Location).managingOrganization (l78/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Organization/MCSDJurisdictionOrganization-Example matching against Profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization</b> <span id="sl45" class="flip" onclick="flip('l45')">Show Reasoning</span><div id="l45" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.ofType(Organization).type[0].coding[0] (l107/c16)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].resource.ofType(Organization) (l172/c20)</b></td><td><b>error</b></td><td title="Extension_EXT_Context_Wrong"><b>The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Bundle.entry.resource.ofType(Organization), BackboneElement.resource, Organization])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Organization).extension[0].extension[0].value.ofType(CodeableConcept).coding[0] (l154/c22)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0] (l132/c16)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[3].resource.ofType(Organization).type[1].coding[0] (l140/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Organization).partOf (l174/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Organization/MCSDJurisdictionOrganization-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl51" class="flip" onclick="flip('l51')">Show Reasoning</span><div id="l51" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Organization).type[1] (l138/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization</b> <span id="sl52" class="flip" onclick="flip('l52')">Show Reasoning</span><div id="l52" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization<ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0].code (l135/c16)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4].resource.ofType(Location).type[0].coding[0] (l194/c16)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code urn:ietf:rfc:3986#HOSP in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HOSP'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[4].resource.ofType(Location).type[1].coding[0] (l202/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[4].resource.ofType(Location).physicalType.coding[0] (l216/c14)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[4].resource.ofType(Location).managingOrganization (l213/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Organization/MCSDFacilityOrganization-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl57" class="flip" onclick="flip('l57')">Show Reasoning</span><div id="l57" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.ofType(Organization): The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Bundle.entry.resource.ofType(Organization), BackboneElement.resource, Organization])</li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[3].resource.ofType(Organization).partOf: <ul><li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization<ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[4].resource.ofType(Location).type[1] (l200/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation</b> <span id="sl58" class="flip" onclick="flip('l58')">Show Reasoning</span><div id="l58" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation<ul><li>Bundle.entry[4].resource.ofType(Location).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4].resource.ofType(Location).type[0].coding[0].code (l197/c16)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'HOSP' but must be 'urn:ihe:iti:mcsd:2019:facility'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4].resource.ofType(Location).managingOrganization (l213/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find a match for profile Organization/MCSDFacilityOrganization-Example among choices: https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[4].resource.ofType(Location).managingOrganization (l213/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Organization/MCSDFacilityOrganization-Example matching against Profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization</b> <span id="sl61" class="flip" onclick="flip('l61')">Show Reasoning</span><div id="l61" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization<ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization): The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Bundle.entry.resource.ofType(Organization), BackboneElement.resource, Organization])</li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</li>, <li>Bundle.entry[3].resource.ofType(Organization).partOf: <ul><li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[5].resource.ofType(HealthcareService).type[0].coding[0] (l241/c16)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[5].resource.ofType(HealthcareService).location[0] (l249/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Location/MCSDFacilityLocation-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl63" class="flip" onclick="flip('l63')">Show Reasoning</span><div id="l63" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[4].resource.ofType(Location).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#HOSP in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HOSP'</li>, <li>Bundle.entry[4].resource.ofType(Location).managingOrganization: <ul><li>Bundle.entry[3].resource.ofType(Organization): The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Bundle.entry.resource.ofType(Organization), BackboneElement.resource, Organization])</li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[3].resource.ofType(Organization).partOf: <ul><li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization<ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</li></ul></li>, <li>Bundle.entry[4].resource.ofType(Location).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation<ul><li>Bundle.entry[4].resource.ofType(Location).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[4].resource.ofType(Location).type[0].coding[0].code: Value is 'HOSP' but must be 'urn:ihe:iti:mcsd:2019:facility'</li>, <li>Bundle.entry[4].resource.ofType(Location).managingOrganization: Unable to find a match for profile Organization/MCSDFacilityOrganization-Example among choices: https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization</li>, <li>Bundle.entry[4].resource.ofType(Location).managingOrganization: <ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization<ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization): The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Bundle.entry.resource.ofType(Organization), BackboneElement.resource, Organization])</li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</li>, <li>Bundle.entry[3].resource.ofType(Organization).partOf: <ul><li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</li></ul></li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[6].resource.ofType(PractitionerRole).organization (l290/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Organization/MCSDFacilityOrganization-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl64" class="flip" onclick="flip('l64')">Show Reasoning</span><div id="l64" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.ofType(Organization): The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Bundle.entry.resource.ofType(Organization), BackboneElement.resource, Organization])</li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[3].resource.ofType(Organization).partOf: <ul><li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization<ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[6].resource.ofType(PractitionerRole).code[0].coding[0] (l272/c16)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[6].resource.ofType(PractitionerRole).location[0] (l279/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Location/MCSDFacilityLocation-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl66" class="flip" onclick="flip('l66')">Show Reasoning</span><div id="l66" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[4].resource.ofType(Location).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#HOSP in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HOSP'</li>, <li>Bundle.entry[4].resource.ofType(Location).managingOrganization: <ul><li>Bundle.entry[3].resource.ofType(Organization): The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Bundle.entry.resource.ofType(Organization), BackboneElement.resource, Organization])</li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[3].resource.ofType(Organization).partOf: <ul><li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization<ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</li></ul></li>, <li>Bundle.entry[4].resource.ofType(Location).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation<ul><li>Bundle.entry[4].resource.ofType(Location).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[4].resource.ofType(Location).type[0].coding[0].code: Value is 'HOSP' but must be 'urn:ihe:iti:mcsd:2019:facility'</li>, <li>Bundle.entry[4].resource.ofType(Location).managingOrganization: Unable to find a match for profile Organization/MCSDFacilityOrganization-Example among choices: https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization</li>, <li>Bundle.entry[4].resource.ofType(Location).managingOrganization: <ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization<ul><li>Bundle.entry[3].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[3].resource.ofType(Organization): The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Bundle.entry.resource.ofType(Organization), BackboneElement.resource, Organization])</li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[3].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</li>, <li>Bundle.entry[3].resource.ofType(Organization).partOf: <ul><li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</li>, <li>Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Bundle.entry[0].resource.ofType(Organization).type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</li></ul></li></ul></li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_HealthcareService-HealthcareService-Example"> </a>
+<h2><a href="HealthcareService-HealthcareService-Example.html">/github/workspace/fsh-generated/resources/HealthcareService-HealthcareService-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>HealthcareService: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>HealthcareService.type[0].coding[0] (l15/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_HealthcareService-MCSDHealthcareService-Example"> </a>
+<h2><a href="HealthcareService-MCSDHealthcareService-Example.html">/github/workspace/fsh-generated/resources/HealthcareService-MCSDHealthcareService-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>HealthcareService: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.HealthcareService.html">mCSD HealthcareService</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>HealthcareService.type[0].coding[0] (l13/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Location-Location-Example"> </a>
+<h2><a href="Location-Location-Example.html">/github/workspace/fsh-generated/resources/Location-Location-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>Location: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/location.html">Location</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Location-MCSDFacilityLocation-Example"> </a>
+<h2><a href="Location-MCSDFacilityLocation-Example.html">/github/workspace/fsh-generated/resources/Location-MCSDFacilityLocation-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>Location: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/location.html">Location</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.FacilityLocation.html">mCSD Location for Facilities</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Location.type[0].coding[0] (l12/c10)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code urn:ietf:rfc:3986#HOSP in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HOSP'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Location.type[1].coding[0] (l20/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Location.physicalType.coding[0] (l34/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Location.type[1] (l18/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation</b> <span id="sl72" class="flip" onclick="flip('l72')">Show Reasoning</span><div id="l72" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation<ul><li>Location.type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Location.type[0].coding[0].code (l15/c10)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'HOSP' but must be 'urn:ihe:iti:mcsd:2019:facility'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Location-MCSDJurisdictionLocation-Example"> </a>
+<h2><a href="Location-MCSDJurisdictionLocation-Example.html">/github/workspace/fsh-generated/resources/Location-MCSDJurisdictionLocation-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>Location: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/location.html">Location</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.JurisdictionLocation.html">mCSD Location for Jurisdictions</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Location.type[0].coding[0] (l12/c10)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Location.type[1].coding[0] (l20/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Location.physicalType.coding[0] (l34/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Location.type[1] (l18/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation</b> <span id="sl77" class="flip" onclick="flip('l77')">Show Reasoning</span><div id="l77" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation<ul><li>Location.type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Location.type[0].coding[0].code (l15/c10)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Organization-MCSDFacilityOrganization-Example"> </a>
+<h2><a href="Organization-MCSDFacilityOrganization-Example.html">/github/workspace/fsh-generated/resources/Organization-MCSDFacilityOrganization-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.FacilityOrganization.html">mCSD Organization for Facilities</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization (l1/c2)</b></td><td><b>error</b></td><td title="Extension_EXT_Context_Wrong"><b>The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Organization])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization.extension[0].extension[0].value.ofType(CodeableConcept).coding[0] (l34/c16)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.type[0].coding[0] (l12/c10)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.type[1].coding[0] (l20/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Organization.type[1] (l18/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization</b> <span id="sl83" class="flip" onclick="flip('l83')">Show Reasoning</span><div id="l83" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization<ul><li>Organization.type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.type[0].coding[0].code (l15/c10)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Organization-MCSDJurisdictionOrganization-Example"> </a>
+<h2><a href="Organization-MCSDJurisdictionOrganization-Example.html">/github/workspace/fsh-generated/resources/Organization-MCSDJurisdictionOrganization-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.JurisdictionOrganization.html">mCSD Organization for Jurisdictions</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.type[0].coding[0] (l12/c10)</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.type[1].coding[0] (l20/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Organization.type[1] (l18/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization</b> <span id="sl87" class="flip" onclick="flip('l87')">Show Reasoning</span><div id="l87" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization<ul><li>Organization.type[1]: discriminator = true and coding.system.where(value = 'urn:ietf:rfc:3986').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization.type[0].coding[0].code (l15/c10)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Organization-MCSDOrganization-ExamplePartner"> </a>
+<h2><a href="Organization-MCSDOrganization-ExamplePartner.html">/github/workspace/fsh-generated/resources/Organization-MCSDOrganization-ExamplePartner.json</a></h2>
+ <ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.Organization.html">mCSD Organization</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization.type[0].coding[0] (l14/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Organization-Organization-Example"> </a>
+<h2><a href="Organization-Organization-Example.html">/github/workspace/fsh-generated/resources/Organization-Organization-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Practitioner-MCSDPractitioner-Example"> </a>
+<h2><a href="Practitioner-MCSDPractitioner-Example.html">/github/workspace/fsh-generated/resources/Practitioner-MCSDPractitioner-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>Practitioner: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.Practitioner.html">mCSD Practitioner</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Practitioner-Practitioner-Example"> </a>
+<h2><a href="Practitioner-Practitioner-Example.html">/github/workspace/fsh-generated/resources/Practitioner-Practitioner-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>Practitioner: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_PractitionerRole-MCSDPractitionerRole-Example"> </a>
+<h2><a href="PractitionerRole-MCSDPractitionerRole-Example.html">/github/workspace/fsh-generated/resources/PractitionerRole-MCSDPractitionerRole-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>PractitionerRole: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a> and <i>this.</i><a href="StructureDefinition-IHE.mCSD.PractitionerRole.html">mCSD PractitionerRole</a> (per meta)</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>PractitionerRole.code[0].coding[0] (l12/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_PractitionerRole-PractitionerRole-Example"> </a>
+<h2><a href="PractitionerRole-PractitionerRole-Example.html">/github/workspace/fsh-generated/resources/PractitionerRole-PractitionerRole-Example.json</a></h2>
+ <ul style="font-size: 7px"><li>PractitionerRole: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_SearchParameter-IHE.mCSD.Organization.HierarchyPartOf"> </a>
+<h2><a href="SearchParameter-IHE.mCSD.Organization.HierarchyPartOf.html">/github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf.json</a></h2>
+ <ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>SearchParameter</b></td><td><b>warning</b></td><td title="spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_SearchParameter-IHE.mCSD.Organization.HierarchyType"> </a>
+<h2><a href="SearchParameter-IHE.mCSD.Organization.HierarchyType.html">/github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyType.json</a></h2>
+ <ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>SearchParameter</b></td><td><b>warning</b></td><td title="spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.FacilityLocation"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.FacilityLocation.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.FacilityOrganization"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.FacilityOrganization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.HealthcareService"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.HealthcareService.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.JurisdictionLocation"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.JurisdictionLocation.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>mCSD Location for Jurisdictions.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/location-boundary-geojson]]].Location.extension</b></td><td><b>error</b></td><td title=""><b>Element Location.extension: derived max (*) cannot be greater than base max (1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition</b></td><td><b>error</b></td><td title=""><b>Element Location.extension: derived max (*) cannot be greater than base max (1)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.JurisdictionOrganization"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.JurisdictionOrganization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Location"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.Location.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.LocationDistance"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.LocationDistance.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Organization"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.Organization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.OrganizationHierarchy"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.OrganizationHierarchy.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.Practitioner"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.Practitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IHE.mCSD.PractitionerRole"> </a>
+<h2><a href="StructureDefinition-IHE.mCSD.PractitionerRole.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_ihe-supplement"> </a>
+<h2><a href="ImplementationGuide-ihe.mcsd.fhir.html">/github/workspace/input/ihe-supplement.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide</b></td><td><b>warning</b></td><td title="ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesSelectiveConsumer.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.xml</a></h2>
+ <ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource (l330/c24)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'supporteProfile'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement.rest[0].resource[4]</b></td><td><b>error</b></td><td title="cpb-12: 'Search parameter names must be unique in the context of a resource.' Rule 'Search parameter names must be unique in the context of a resource.' Failed"><b>cpb-12: 'Search parameter names must be unique in the context of a resource.' Rule 'Search parameter names must be unique in the context of a resource.' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance.xml</a></h2>
+ <ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l29/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesSelectiveSupplier.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.xml</a></h2>
+ <ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement/f:rest/f:resource (l42/c24)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'supporteProfile'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement.rest[0].resource[4]</b></td><td><b>error</b></td><td title="cpb-12: 'Search parameter names must be unique in the context of a resource.' Rule 'Search parameter names must be unique in the context of a resource.' Failed"><b>cpb-12: 'Search parameter names must be unique in the context of a resource.' Rule 'Search parameter names must be unique in the context of a resource.' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance.xml</a></h2>
+ <ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l29/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesUpdateConsumer.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.xml</a></h2>
+ <ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance.xml</a></h2>
+ <ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesUpdateSupplier.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.xml</a></h2>
+ <ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance"> </a>
+<h2><a href="CapabilityStatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance.html">/github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance.xml</a></h2>
+ <ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:CapabilityStatement (l30/c30)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'acceptUnknown'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement</b></td><td><b>warning</b></td><td title="cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>?pub-msg-2?</b></p><ul>
+ <li>// (And include comments like this justifying why)</li>
+ <li>// Add warning and/or information messages here after you've confirmed that they aren't really a problem</li>
+ <li>// We define the version on a global basis, so don't need it on the individual source definitions</li>
+ <li>WARNING: http://hl7.org/fhir/uv/myig/StructureDefinition/ext-myExtension: Profiles SHOULD state their own version</li>
+ <li>WARNING: http://hl7.org/fhir/uv/myig/StructureDefinition/somepatientprofile: Profiles SHOULD state their own version</li>
+</ul>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Extension_EXT_Context_Wrong"> </a>
+<h2>Extension_EXT_Context_Wrong</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Bundle.entry.resource.ofType(Organization), BackboneElement.resource, Organization])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-MCSDFacilityOrganization-Example.html">/github/workspace/fsh-generated/resources/Organization-MCSDFacilityOrganization-Example.json</a></td><td><b>The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Organization])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.FacilityLocation.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.FacilityOrganization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.HealthcareService.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.JurisdictionLocation.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.JurisdictionOrganization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.Location.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.LocationDistance.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.Organization.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.OrganizationHierarchy.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.Practitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.mCSD.PractitionerRole.html">/github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantMatchChoice"> </a>
+<h2>Reference_REF_CantMatchChoice</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Unable to find a match for profile Organization/MCSDJurisdictionOrganization-Example among choices: https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Unable to find a match for profile Organization/MCSDFacilityOrganization-Example among choices: https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-Example-CoreOnly.html">/github/workspace/fsh-generated/resources/Bundle-Example-CoreOnly.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="HealthcareService-HealthcareService-Example.html">/github/workspace/fsh-generated/resources/HealthcareService-HealthcareService-Example.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="HealthcareService-MCSDHealthcareService-Example.html">/github/workspace/fsh-generated/resources/HealthcareService-MCSDHealthcareService-Example.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Location-MCSDFacilityLocation-Example.html">/github/workspace/fsh-generated/resources/Location-MCSDFacilityLocation-Example.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Location-MCSDJurisdictionLocation-Example.html">/github/workspace/fsh-generated/resources/Location-MCSDJurisdictionLocation-Example.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Organization-MCSDFacilityOrganization-Example.html">/github/workspace/fsh-generated/resources/Organization-MCSDFacilityOrganization-Example.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Organization-MCSDOrganization-ExamplePartner.html">/github/workspace/fsh-generated/resources/Organization-MCSDOrganization-ExamplePartner.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="PractitionerRole-MCSDPractitionerRole-Example.html">/github/workspace/fsh-generated/resources/PractitionerRole-MCSDPractitionerRole-Example.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Unknown Code urn:ietf:rfc:3986#HOSP in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HOSP'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Location-MCSDFacilityLocation-Example.html">/github/workspace/fsh-generated/resources/Location-MCSDFacilityLocation-Example.json</a></td><td><b>Unknown Code urn:ietf:rfc:3986#HOSP in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HOSP'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Location-MCSDJurisdictionLocation-Example.html">/github/workspace/fsh-generated/resources/Location-MCSDJurisdictionLocation-Example.json</a></td><td><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-MCSDFacilityOrganization-Example.html">/github/workspace/fsh-generated/resources/Organization-MCSDFacilityOrganization-Example.json</a></td><td><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-MCSDJurisdictionOrganization-Example.html">/github/workspace/fsh-generated/resources/Organization-MCSDJurisdictionOrganization-Example.json</a></td><td><b>Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Location-MCSDFacilityLocation-Example.html">/github/workspace/fsh-generated/resources/Location-MCSDFacilityLocation-Example.json</a></td><td><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Location-MCSDJurisdictionLocation-Example.html">/github/workspace/fsh-generated/resources/Location-MCSDJurisdictionLocation-Example.json</a></td><td><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Organization-MCSDFacilityOrganization-Example.html">/github/workspace/fsh-generated/resources/Organization-MCSDFacilityOrganization-Example.json</a></td><td><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Organization-MCSDJurisdictionOrganization-Example.html">/github/workspace/fsh-generated/resources/Organization-MCSDJurisdictionOrganization-Example.json</a></td><td><b>Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_DT_Fixed_Wrong"> </a>
+<h2>_DT_Fixed_Wrong</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Example-MCSD.html">/github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json</a></td><td><b>Value is 'HOSP' but must be 'urn:ihe:iti:mcsd:2019:facility'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Location-MCSDFacilityLocation-Example.html">/github/workspace/fsh-generated/resources/Location-MCSDFacilityLocation-Example.json</a></td><td><b>Value is 'HOSP' but must be 'urn:ihe:iti:mcsd:2019:facility'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Location-MCSDJurisdictionLocation-Example.html">/github/workspace/fsh-generated/resources/Location-MCSDJurisdictionLocation-Example.json</a></td><td><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-MCSDFacilityOrganization-Example.html">/github/workspace/fsh-generated/resources/Organization-MCSDFacilityOrganization-Example.json</a></td><td><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Organization-MCSDJurisdictionOrganization-Example.html">/github/workspace/fsh-generated/resources/Organization-MCSDJurisdictionOrganization-Example.json</a></td><td><b>Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'</b></td>
+   </tr>
+</table>
+</body>
+</html>

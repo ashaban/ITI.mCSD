@@ -1,0 +1,28 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/ITI/mCSD/Location/Location-Example> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Location-Example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>name</b>: Location-Example</p><p><b>managingOrganization</b>: <a href=\"Organization-Organization-Example.html\">Generated Summary: active; name: Organization-Example</a></p></div>"
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.name [ fhir:value "Location-Example"];
+  fhir:Location.managingOrganization [
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Organization/Organization-Example>;
+     fhir:Reference.reference [ fhir:value "Organization/Organization-Example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://profiles.ihe.net/ITI/mCSD/Location/Location-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

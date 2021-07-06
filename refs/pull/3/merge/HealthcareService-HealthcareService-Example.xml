@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="HealthcareService-Example"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>providedBy</b>: <a href="Organization-Organization-Example.html">Generated Summary: active; name: Organization-Example</a></p><p><b>type</b>: <span title="Codes: ">567</span></p><p><b>location</b>: <a href="Location-Location-Example.html">Generated Summary: status: active; name: Location-Example</a></p></div>
+  </text>
+  <providedBy>
+    <reference value="Organization/Organization-Example"/>
+  </providedBy>
+  <type>
+    <coding>
+      <code value="567"/>
+    </coding>
+  </type>
+  <location>
+    <reference value="Location/Location-Example"/>
+  </location>
+</HealthcareService>

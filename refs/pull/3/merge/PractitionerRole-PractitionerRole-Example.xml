@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="PractitionerRole-Example"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>practitioner</b>: <a href="Practitioner-Practitioner-Example.html">Generated Summary: Hello, World!; gender: other</a></p><p><b>organization</b>: <a href="Organization-Organization-Example.html">Generated Summary: active; name: Organization-Example</a></p><p><b>location</b>: <a href="Location-Location-Example.html">Generated Summary: status: active; name: Location-Example</a></p></div>
+  </text>
+  <practitioner>
+    <reference value="Practitioner/Practitioner-Example"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/Organization-Example"/>
+  </organization>
+  <location>
+    <reference value="Location/Location-Example"/>
+  </location>
+</PractitionerRole>

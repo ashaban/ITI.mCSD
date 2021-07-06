@@ -1,0 +1,43 @@
+{
+  "resourceType": "Location",
+  "id": "MCSDFacilityLocation-Example",
+  "meta": {
+    "profile": [
+      "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>name</b>: MCSDFacilityLocation-Example</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 HOSP}\">HOSP</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p><p><b>physicalType</b>: <span title=\"Codes: \">PC</span></p><p><b>managingOrganization</b>: <a href=\"Organization-MCSDFacilityOrganization-Example.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 govt}\">govt</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; name: MCSDFacilityOrganization-Example</a></p></div>"
+  },
+  "status": "active",
+  "name": "MCSDFacilityLocation-Example",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:ietf:rfc:3986",
+          "code": "HOSP"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://github.com/ihe/ITI.mCSD",
+          "code": "Facility"
+        }
+      ]
+    }
+  ],
+  "physicalType": {
+    "coding": [
+      {
+        "code": "PC"
+      }
+    ]
+  },
+  "managingOrganization": {
+    "reference": "Organization/MCSDFacilityOrganization-Example"
+  }
+}

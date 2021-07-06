@@ -1,0 +1,123 @@
+{
+  "resourceType": "Bundle",
+  "id": "Example-CoreOnly",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "http://www.example.org/fhir/Organization/Organization-Example",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "Organization-Example",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Organization-Example</p></div>"
+        },
+        "active": true,
+        "name": "Organization-Example"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Location/Location-Example",
+      "resource": {
+        "resourceType": "Location",
+        "id": "Location-Example",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>name</b>: Location-Example</p><p><b>managingOrganization</b>: <a href=\"#Organization_Organization-Example\">See above (Organization/Organization-Example)</a></p></div>"
+        },
+        "status": "active",
+        "name": "Location-Example",
+        "managingOrganization": {
+          "reference": "Organization/Organization-Example"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/HealthcareService/HealthcareService-Example",
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "HealthcareService-Example",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>providedBy</b>: <a href=\"#Organization_Organization-Example\">See above (Organization/Organization-Example)</a></p><p><b>type</b>: <span title=\"Codes: \">567</span></p><p><b>location</b>: <a href=\"#Location_Location-Example\">See above (Location/Location-Example)</a></p></div>"
+        },
+        "providedBy": {
+          "reference": "Organization/Organization-Example"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "567"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/Location-Example"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "HealthcareService"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/PractitionerRole/PractitionerRole-Example",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "PractitionerRole-Example",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>practitioner</b>: <a href=\"#Practitioner_Practitioner-Example\">See above (Practitioner/Practitioner-Example)</a></p><p><b>organization</b>: <a href=\"#Organization_Organization-Example\">See above (Organization/Organization-Example)</a></p><p><b>location</b>: <a href=\"#Location_Location-Example\">See above (Location/Location-Example)</a></p></div>"
+        },
+        "practitioner": {
+          "reference": "Practitioner/Practitioner-Example"
+        },
+        "organization": {
+          "reference": "Organization/Organization-Example"
+        },
+        "location": [
+          {
+            "reference": "Location/Location-Example"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PractitionerRole"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Practitioner/Practitioner-Example",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "Practitioner-Example",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Hello, World!</p><p><b>gender</b>: other</p></div>"
+        },
+        "name": [
+          {
+            "text": "Hello, World!"
+          }
+        ],
+        "gender": "other"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="MCSDPractitioner-Example"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Wil E. Coyote</p></div>
+  </text>
+  <name>
+    <text value="Wil E. Coyote"/>
+  </name>
+</Practitioner>

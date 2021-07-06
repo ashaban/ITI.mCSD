@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IHE.MCSD.FHIR\Mobile Care Services Discovery (mCSD) - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ihe.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="ihe-logo" no-external="true" href="http://ihe.net">
+    <img height="71" alt="Visit the IHE website" src="assets/images/ihe-international.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" style="margin-top: 15px;" alt="Visit the IHE website" src="assets/images/ihe-logo.png"/> </a>
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Mobile Care Services Discovery</span><br/>0.2.0 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">mCSD Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="146_introduction.html">mCSD</a>
+      </li>
+      <li>
+        <a href="1461_actors_and_transactions.html">Actors and Transactions</a>
+      </li>
+      <li>
+        <a href="1462_actors_options.html">Actors Options</a>
+      </li>
+      <li>
+        <a href="1463_required_actor_groupings.html">Required Actor Groupings</a>
+      </li>
+      <li>
+        <a href="1464_overview.html">Overview</a>
+      </li>
+      <li>
+        <a href="1465_security_considerations.html">Security Considerations</a>
+      </li>
+      <li>
+        <a href="1466_cross_profile_considerations.html">Cross Profile Considerations</a>
+      </li>
+      <li>
+        <a href="1467_deployment_considerations.html">Deployment Considerations</a>
+      </li>
+      <li>
+        <a href="a_issues.html">Open and Closed Issues</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Transactions<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ITI-90.html">Find Matching Care Services [ITI-90]</a>
+      </li>
+      <li>
+        <a href="ITI-91.html">Request Care Services Updates [ITI-91]</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Mobile Care Services Discovery (mCSD)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Mobile Care Services Discovery - Local Development build (v0.2.0). See the <a href="http://profiles.ihe.net/ITI/mCSD/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Mobile Care Services Discovery (mCSD)</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="146-mobile-care-services-discovery-mcsd-profile">1:46 Mobile Care Services Discovery (mCSD) Profile</h1>
+
+<p>The Mobile Care Services Discovery (mCSD) Profile supports discovery of
+care services resources using a RESTful interface in interrelated,
+federated environments.</p>
+
+<p>The profile supports querying for:</p>
+
+<ol>
+  <li>
+    <p><strong>Organization</strong> – Organizations are “umbrella” entities; these may
+be considered the administrative bodies under whose auspices care
+services are provided such as Healthcare Information Exchanges
+(HIEs), Integrated Delivery Networks (IDNs), Non-Government
+Organizations (NGOs), Faith-Based Organizations (FBOs) or even a
+one-physician family practice. An organization has a unique
+identifier and may have additional administrative attributes such as
+contact person, mailing address, etc. Departments of an institution,
+or other administrative units, may be represented as child
+Organizations of a parent Organization.</p>
+  </li>
+  <li>
+    <p><strong>Facility</strong> – Facilities are physical care delivery sites such as
+hospitals, clinics, health outposts, physician offices, labs,
+pharmacies, etc. A Facility has a unique identifier, geographic
+attributes (address, geocode), contact attributes, attributes
+regarding its hours of operation, etc. Each Facility is defined by a
+pairing of Location and Organization.</p>
+  </li>
+  <li>
+    <p><strong>Location</strong> – Locations are physical places where care can be
+delivered such as facilities, buildings, wards, rooms, or vehicles.
+Locations also include political administrative units such as a
+village districts or regions. A Location has a unique identifier and
+may have geographic attributes (address, geocode), attributes
+regarding its hours of operation, etc. Each Location may be related
+to one Organization. A location may have a hierarchical relationship
+with other locations.</p>
+  </li>
+  <li>
+    <p><strong>Practitioner</strong> – A Practitioner is a health worker such as defined
+by WHO (<a href="http://www.who.int/whr/2006/06_chap1_en.pdf">http://www.who.int/whr/2006/06_chap1_en.pdf</a>); a
+Practitioner might be a physician, nurse, pharmacist, community
+health worker, district health manager, etc. Practitioners have
+contact and demographic attributes. Each Practitioner may be related
+to one or more Organizations, one or more Locations and one or more
+Healthcare Services. Specific attributes may be associated with the
+Practitioner relationship with these other entities.</p>
+  </li>
+  <li>
+    <p><strong>Healthcare Service</strong> – Each healthcare service has a unique
+ identifier. Examples include surgical services, antenatal care
+ services, or primary care services. The combination of a Healthcare
+ Service offered at a Location may have specific attributes including
+ contact person, hours of operation, etc.</p>
+  </li>
+</ol>
+
+<p>The capabilities detailed in this profile support consumer-centric
+queries such as finding “where is the closest youth mental health
+services clinic” or “what are the hours of a physiotherapist near my
+workplace”. In addition, mCSD supports crucial health system management
+workflows. This can include reporting and analyses, such as “what are my
+health human resource capacities, by facility, by cadre,” “what are all
+the services offered at this facility,” or conversely, “where are all
+the facilities that offer this service.” The mCSD Profile may be
+employed to support, for example, the Provider Queries listed by the US
+Office of the National Coordinator as part of the Standards and
+Interoperability Framework (<a href="http://wiki.siframework.org/file/view/ESI%20Query%20and%20Response.pdf">http://wiki.siframework.org/file/view/ESI
+Query and
+Response.pdf</a>).</p>
+
+<p>The loosely coupled design and flexible querying capability of the mCSD
+Profile means it can be deployed within a variety of eHealth
+architectures and support a wide array of care workflows.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ihe.net">IHE International - ITI domain Group</a>.  Package ihe.mcsd.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 6, 2021 18:18+0000">2021-07-06</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 <a style="color: #81BEF7" target="_blank" href="http://profiles.ihe.net/ITI/mCSD/history.html">Version History</a></a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="https://wiki.ihe.net/index.php/Category:CPs">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

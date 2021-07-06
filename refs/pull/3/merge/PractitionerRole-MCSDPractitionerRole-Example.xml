@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="MCSDPractitionerRole-Example"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>practitioner</b>: <a href="Practitioner-MCSDPractitioner-Example.html">Generated Summary: Wil E. Coyote</a></p><p><b>organization</b>: <a href="Organization-MCSDFacilityOrganization-Example.html">Generated Summary: active; <span title="Codes: {urn:ietf:rfc:3986 govt}">govt</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span>; name: MCSDFacilityOrganization-Example</a></p><p><b>code</b>: <span title="Codes: ">nurse</span></p><p><b>location</b>: <a href="Location-MCSDFacilityLocation-Example.html">Generated Summary: status: active; name: MCSDFacilityLocation-Example; <span title="Codes: {urn:ietf:rfc:3986 HOSP}">HOSP</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span>; <span title="Codes: ">PC</span></a></p><p><b>healthcareService</b>: <a href="HealthcareService-MCSDHealthcareService-Example.html">Generated Summary: <span title="Codes: ">General Practice</span>; name: ANC</a></p></div>
+  </text>
+  <practitioner>
+    <reference value="Practitioner/MCSDPractitioner-Example"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/MCSDFacilityOrganization-Example"/>
+  </organization>
+  <code>
+    <coding>
+      <code value="nurse"/>
+    </coding>
+  </code>
+  <location>
+    <reference value="Location/MCSDFacilityLocation-Example"/>
+  </location>
+  <healthcareService>
+    <reference value="HealthcareService/MCSDHealthcareService-Example"/>
+  </healthcareService>
+</PractitionerRole>

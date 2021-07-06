@@ -1,0 +1,224 @@
+﻿IHE.mCSD : Validation Results
+=========================================
+
+err = 74, warn = 42, info = 24
+IG Publisher Version: 1.1.76
+Generated Tue Jul 06 18:19:14 UTC 2021. FHIR version 4.0.1 for ihe.mcsd.fhir#0.2.0 (canonical = http://profiles.ihe.net/ITI/mCSD)
+
+ Build Errors : 18 / 15 / 0
+ /github/workspace/fsh-generated/resources/Bundle-Example-CoreOnly : 0 / 1 / 6
+ /github/workspace/fsh-generated/resources/Bundle-Example-MCSD : 11 / 6 / 33
+ /github/workspace/fsh-generated/resources/HealthcareService-HealthcareService-Example : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/HealthcareService-MCSDHealthcareService-Example : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Location-Location-Example : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Location-MCSDFacilityLocation-Example : 2 / 1 / 4
+ /github/workspace/fsh-generated/resources/Location-MCSDJurisdictionLocation-Example : 2 / 1 / 4
+ /github/workspace/fsh-generated/resources/Organization-MCSDFacilityOrganization-Example : 3 / 1 / 4
+ /github/workspace/fsh-generated/resources/Organization-MCSDJurisdictionOrganization-Example : 2 / 0 / 4
+ /github/workspace/fsh-generated/resources/Organization-MCSDOrganization-ExamplePartner : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Organization-Organization-Example : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-MCSDPractitioner-Example : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Practitioner-Practitioner-Example : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/PractitionerRole-MCSDPractitionerRole-Example : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/PractitionerRole-PractitionerRole-Example : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyType : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole : 2 / 0 / 1
+ /github/workspace/input/ihe-supplement : 0 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer : 3 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier : 3 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance : 1 / 1 / 1
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Practitioner/Practitioner-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/Practitioner-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource PractitionerRole/PractitionerRole-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/PractitionerRole-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource SearchParameter/IHE.mCSD.Organization.HierarchyType.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Location/Location-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/Location-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource HealthcareService/HealthcareService-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/HealthcareService-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Location/MCSDJurisdictionLocation-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/MCSDJurisdictionLocation-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/MCSDOrganization-ExamplePartner.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/MCSDOrganization-ExamplePartner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/Organization-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/Organization-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource HealthcareService/MCSDHealthcareService-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/MCSDHealthcareService-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/MCSDJurisdictionOrganization-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/MCSDJurisdictionOrganization-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/Example-MCSD.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-MCSD.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource PractitionerRole/MCSDPractitionerRole-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/MCSDPractitionerRole-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/MCSDFacilityOrganization-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/MCSDFacilityOrganization-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Practitioner/MCSDPractitioner-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/MCSDPractitioner-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource SearchParameter/IHE.mCSD.Organization.HierarchyPartOf.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/Example-CoreOnly.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-CoreOnly.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Location/MCSDFacilityLocation-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/MCSDFacilityLocation-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== /github/workspace/fsh-generated/resources/Bundle-Example-CoreOnly.json ==
+WARNING: Bundle/Example-CoreOnly: Bundle.entry[2].resource.ofType(HealthcareService).type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== /github/workspace/fsh-generated/resources/Bundle-Example-MCSD.json ==
+ERROR: Bundle/Example-MCSD: Bundle.entry[0].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[0].resource.ofType(Organization).type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[0].resource.ofType(Organization).type[1]: This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization
+ERROR: Bundle/Example-MCSD: Bundle.entry[0].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'
+ERROR: Bundle/Example-MCSD: Bundle.entry[1].resource.ofType(Location).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[1].resource.ofType(Location).type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
+WARNING: Bundle/Example-MCSD: Bundle.entry[1].resource.ofType(Location).physicalType.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[1].resource.ofType(Location).managingOrganization: Details for Organization/MCSDJurisdictionOrganization-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[1].resource.ofType(Location).type[1]: This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation
+ERROR: Bundle/Example-MCSD: Bundle.entry[1].resource.ofType(Location).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'
+ERROR: Bundle/Example-MCSD: Bundle.entry[1].resource.ofType(Location).managingOrganization: Unable to find a match for profile Organization/MCSDJurisdictionOrganization-Example among choices: https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[1].resource.ofType(Location).managingOrganization: Details for Organization/MCSDJurisdictionOrganization-Example matching against Profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization
+WARNING: Bundle/Example-MCSD: Bundle.entry[2].resource.ofType(Organization).type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/Example-MCSD: Bundle.entry[3].resource.ofType(Organization): The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Bundle.entry.resource.ofType(Organization), BackboneElement.resource, Organization])
+WARNING: Bundle/Example-MCSD: Bundle.entry[3].resource.ofType(Organization).extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/Example-MCSD: Bundle.entry[3].resource.ofType(Organization).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[3].resource.ofType(Organization).type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[3].resource.ofType(Organization).partOf: Details for Organization/MCSDJurisdictionOrganization-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[3].resource.ofType(Organization).type[1]: This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization
+ERROR: Bundle/Example-MCSD: Bundle.entry[3].resource.ofType(Organization).type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'
+ERROR: Bundle/Example-MCSD: Bundle.entry[4].resource.ofType(Location).type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#HOSP in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HOSP'
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[4].resource.ofType(Location).type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
+WARNING: Bundle/Example-MCSD: Bundle.entry[4].resource.ofType(Location).physicalType.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[4].resource.ofType(Location).managingOrganization: Details for Organization/MCSDFacilityOrganization-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[4].resource.ofType(Location).type[1]: This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation
+ERROR: Bundle/Example-MCSD: Bundle.entry[4].resource.ofType(Location).type[0].coding[0].code: Value is 'HOSP' but must be 'urn:ihe:iti:mcsd:2019:facility'
+ERROR: Bundle/Example-MCSD: Bundle.entry[4].resource.ofType(Location).managingOrganization: Unable to find a match for profile Organization/MCSDFacilityOrganization-Example among choices: https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[4].resource.ofType(Location).managingOrganization: Details for Organization/MCSDFacilityOrganization-Example matching against Profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization
+WARNING: Bundle/Example-MCSD: Bundle.entry[5].resource.ofType(HealthcareService).type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[5].resource.ofType(HealthcareService).location[0]: Details for Location/MCSDFacilityLocation-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Location
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[6].resource.ofType(PractitionerRole).organization: Details for Organization/MCSDFacilityOrganization-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Organization
+WARNING: Bundle/Example-MCSD: Bundle.entry[6].resource.ofType(PractitionerRole).code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Bundle/Example-MCSD: Bundle.entry[6].resource.ofType(PractitionerRole).location[0]: Details for Location/MCSDFacilityLocation-Example matching against Profile http://hl7.org/fhir/StructureDefinition/Location
+== /github/workspace/fsh-generated/resources/HealthcareService-HealthcareService-Example.json ==
+WARNING: HealthcareService/HealthcareService-Example: HealthcareService.type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== /github/workspace/fsh-generated/resources/HealthcareService-MCSDHealthcareService-Example.json ==
+WARNING: HealthcareService/MCSDHealthcareService-Example: HealthcareService.type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== /github/workspace/fsh-generated/resources/Location-Location-Example.json ==
+== /github/workspace/fsh-generated/resources/Location-MCSDFacilityLocation-Example.json ==
+ERROR: Location/MCSDFacilityLocation-Example: Location.type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#HOSP in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HOSP'
+INFORMATION: Location/MCSDFacilityLocation-Example: Location.type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
+WARNING: Location/MCSDFacilityLocation-Example: Location.physicalType.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Location/MCSDFacilityLocation-Example: Location.type[1]: This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation
+ERROR: Location/MCSDFacilityLocation-Example: Location.type[0].coding[0].code: Value is 'HOSP' but must be 'urn:ihe:iti:mcsd:2019:facility'
+== /github/workspace/fsh-generated/resources/Location-MCSDJurisdictionLocation-Example.json ==
+ERROR: Location/MCSDJurisdictionLocation-Example: Location.type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'
+INFORMATION: Location/MCSDJurisdictionLocation-Example: Location.type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
+WARNING: Location/MCSDJurisdictionLocation-Example: Location.physicalType.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Location/MCSDJurisdictionLocation-Example: Location.type[1]: This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation
+ERROR: Location/MCSDJurisdictionLocation-Example: Location.type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'
+== /github/workspace/fsh-generated/resources/Organization-MCSDFacilityOrganization-Example.json ==
+ERROR: Organization/MCSDFacilityOrganization-Example: Organization: The extension https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy is not allowed to be used at this point (allowed = e:MCSDOrganization; this element is [[Organization])
+WARNING: Organization/MCSDFacilityOrganization-Example: Organization.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Organization/MCSDFacilityOrganization-Example: Organization.type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'
+INFORMATION: Organization/MCSDFacilityOrganization-Example: Organization.type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
+INFORMATION: Organization/MCSDFacilityOrganization-Example: Organization.type[1]: This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization
+ERROR: Organization/MCSDFacilityOrganization-Example: Organization.type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:facility'
+== /github/workspace/fsh-generated/resources/Organization-MCSDJurisdictionOrganization-Example.json ==
+ERROR: Organization/MCSDJurisdictionOrganization-Example: Organization.type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#govt in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#govt'
+INFORMATION: Organization/MCSDJurisdictionOrganization-Example: Organization.type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
+INFORMATION: Organization/MCSDJurisdictionOrganization-Example: Organization.type[1]: This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization
+ERROR: Organization/MCSDJurisdictionOrganization-Example: Organization.type[0].coding[0].code: Value is 'govt' but must be 'urn:ihe:iti:mcsd:2019:jurisdiction'
+== /github/workspace/fsh-generated/resources/Organization-MCSDOrganization-ExamplePartner.json ==
+WARNING: Organization/MCSDOrganization-ExamplePartner: Organization.type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== /github/workspace/fsh-generated/resources/Organization-Organization-Example.json ==
+== /github/workspace/fsh-generated/resources/Practitioner-MCSDPractitioner-Example.json ==
+== /github/workspace/fsh-generated/resources/Practitioner-Practitioner-Example.json ==
+== /github/workspace/fsh-generated/resources/PractitionerRole-MCSDPractitionerRole-Example.json ==
+WARNING: PractitionerRole/MCSDPractitionerRole-Example: PractitionerRole.code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== /github/workspace/fsh-generated/resources/PractitionerRole-PractitionerRole-Example.json ==
+== /github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyPartOf.json ==
+WARNING: SearchParameter/IHE.mCSD.Organization.HierarchyPartOf: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== /github/workspace/fsh-generated/resources/SearchParameter-IHE.mCSD.Organization.HierarchyType.json ==
+WARNING: SearchParameter/IHE.mCSD.Organization.HierarchyType: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityLocation: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.FacilityOrganization: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.HealthcareService: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation)
+ERROR: mCSD Location for Jurisdictions.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/location-boundary-geojson]]].Location.extension: Element Location.extension: derived max (*) cannot be greater than base max (1)
+ERROR: StructureDefinition/IHE.mCSD.JurisdictionLocation: StructureDefinition: Element Location.extension: derived max (*) cannot be greater than base max (1)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionLocation: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.JurisdictionOrganization: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location)
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Location: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance)
+WARNING: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.LocationDistance: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.LocationDistance
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Organization: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.OrganizationHierarchy: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.Practitioner: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner
+== /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json ==
+ERROR: StructureDefinition.where(url = 'https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole.json - the canonical URL (http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole) does not match the URL (https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-IHE.mCSD.PractitionerRole: URL Mismatch http://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole vs https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole
+== /github/workspace/input/ihe-supplement.xml ==
+WARNING: ImplementationGuide/ihe.mcsd.fhir: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement/f:rest/f:resource: Undefined element 'supporteProfile'
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer: CapabilityStatement.rest[0].resource[4]: cpb-12: 'Search parameter names must be unique in the context of a resource.' Rule 'Search parameter names must be unique in the context of a resource.' Failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveConsumer.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+ERROR: /f:CapabilityStatement/f:rest/f:resource: Undefined element 'supporteProfile'
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier: CapabilityStatement.rest[0].resource[4]: cpb-12: 'Search parameter names must be unique in the context of a resource.' Rule 'Search parameter names must be unique in the context of a resource.' Failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesSelectiveSupplier.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateConsumer.LocationDistance.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateConsumer.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== /github/workspace/input/resources/capabilitystatement-IHE.mCSD.CareServicesUpdateSupplier.LocationDistance.xml ==
+ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
+WARNING: CapabilityStatement/IHE.mCSD.CareServicesUpdateSupplier.LocationDistance: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed

@@ -1,0 +1,350 @@
+{
+  "resourceType": "Bundle",
+  "id": "Example-MCSD",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "http://www.example.org/fhir/Organization/MCSDJurisdictionOrganization-Example",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "MCSDJurisdictionOrganization-Example",
+        "meta": {
+          "profile": [
+            "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionOrganization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 govt}\">govt</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}\">Jurisdiction</span></p><p><b>name</b>: MCSDJurisdictionOrganization-Example</p></div>"
+        },
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "govt"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://github.com/ihe/ITI.mCSD",
+                "code": "Jurisdiction"
+              }
+            ]
+          }
+        ],
+        "name": "MCSDJurisdictionOrganization-Example"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Location/MCSDJurisdictionLocation-Example",
+      "resource": {
+        "resourceType": "Location",
+        "id": "MCSDJurisdictionLocation-Example",
+        "meta": {
+          "profile": [
+            "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.JurisdictionLocation"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>name</b>: MCSDJurisdictionLocation-Example</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 govt}\">govt</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Jurisdiction}\">Jurisdiction</span></p><p><b>physicalType</b>: <span title=\"Codes: \">PC</span></p><p><b>managingOrganization</b>: <a href=\"#Organization_MCSDJurisdictionOrganization-Example\">See above (Organization/MCSDJurisdictionOrganization-Example)</a></p></div>"
+        },
+        "status": "active",
+        "name": "MCSDJurisdictionLocation-Example",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "govt"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://github.com/ihe/ITI.mCSD",
+                "code": "Jurisdiction"
+              }
+            ]
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "PC"
+            }
+          ]
+        },
+        "managingOrganization": {
+          "reference": "Organization/MCSDJurisdictionOrganization-Example"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Organization/MCSDOrganization-ExamplePartner",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "MCSDOrganization-ExamplePartner",
+        "meta": {
+          "profile": [
+            "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: \">govt</span></p><p><b>name</b>: Organization-ExamplePartner</p></div>"
+        },
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "govt"
+              }
+            ]
+          }
+        ],
+        "name": "Organization-ExamplePartner"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Organization/MCSDFacilityOrganization-Example",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "MCSDFacilityOrganization-Example",
+        "meta": {
+          "profile": [
+            "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityOrganization"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>mCSD Additional Hierarchies extension for mCSD Organization.</b></p><p><b>value</b>: <span title=\"Codes: \">ihe-mcsd-hierarchy-type</span></p><p><b>value</b>: <a href=\"#Organization_MCSDOrganization-ExamplePartner\">See above (Organization/MCSDOrganization-ExamplePartner)</a></p></blockquote><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 govt}\">govt</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p><p><b>name</b>: MCSDFacilityOrganization-Example</p><p><b>partOf</b>: <a href=\"#Organization_MCSDJurisdictionOrganization-Example\">See above (Organization/MCSDJurisdictionOrganization-Example)</a></p></div>"
+        },
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "hierarchy-type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "ihe-mcsd-hierarchy-type"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "part-of",
+                "valueReference": {
+                  "reference": "Organization/MCSDOrganization-ExamplePartner"
+                }
+              }
+            ],
+            "url": "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.OrganizationHierarchy"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "govt"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://github.com/ihe/ITI.mCSD",
+                "code": "Facility"
+              }
+            ]
+          }
+        ],
+        "name": "MCSDFacilityOrganization-Example",
+        "partOf": {
+          "reference": "Organization/MCSDJurisdictionOrganization-Example"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Location/MCSDFacilityLocation-Example",
+      "resource": {
+        "resourceType": "Location",
+        "id": "MCSDFacilityLocation-Example",
+        "meta": {
+          "profile": [
+            "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>name</b>: MCSDFacilityLocation-Example</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 HOSP}\">HOSP</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p><p><b>physicalType</b>: <span title=\"Codes: \">PC</span></p><p><b>managingOrganization</b>: <a href=\"#Organization_MCSDFacilityOrganization-Example\">See above (Organization/MCSDFacilityOrganization-Example)</a></p></div>"
+        },
+        "status": "active",
+        "name": "MCSDFacilityLocation-Example",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "HOSP"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://github.com/ihe/ITI.mCSD",
+                "code": "Facility"
+              }
+            ]
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "PC"
+            }
+          ]
+        },
+        "managingOrganization": {
+          "reference": "Organization/MCSDFacilityOrganization-Example"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/HealthcareService/MCSDHealthcareService-Example",
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "MCSDHealthcareService-Example",
+        "meta": {
+          "profile": [
+            "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>type</b>: <span title=\"Codes: \">General Practice</span></p><p><b>location</b>: <a href=\"#Location_MCSDFacilityLocation-Example\">See above (Location/MCSDFacilityLocation-Example)</a></p><p><b>name</b>: ANC</p></div>"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "124",
+                "display": "General Practice"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/MCSDFacilityLocation-Example"
+          }
+        ],
+        "name": "ANC"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "HealthcareService"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/PractitionerRole/MCSDPractitionerRole-Example",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "MCSDPractitionerRole-Example",
+        "meta": {
+          "profile": [
+            "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>practitioner</b>: <a href=\"#Practitioner_MCSDPractitioner-Example\">See above (Practitioner/MCSDPractitioner-Example)</a></p><p><b>organization</b>: <a href=\"#Organization_MCSDFacilityOrganization-Example\">See above (Organization/MCSDFacilityOrganization-Example)</a></p><p><b>code</b>: <span title=\"Codes: \">nurse</span></p><p><b>location</b>: <a href=\"#Location_MCSDFacilityLocation-Example\">See above (Location/MCSDFacilityLocation-Example)</a></p><p><b>healthcareService</b>: <a href=\"#HealthcareService_MCSDHealthcareService-Example\">See above (HealthcareService/MCSDHealthcareService-Example)</a></p></div>"
+        },
+        "practitioner": {
+          "reference": "Practitioner/MCSDPractitioner-Example"
+        },
+        "organization": {
+          "reference": "Organization/MCSDFacilityOrganization-Example"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "nurse"
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/MCSDFacilityLocation-Example"
+          }
+        ],
+        "healthcareService": [
+          {
+            "reference": "HealthcareService/MCSDHealthcareService-Example"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "PractitionerRole"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Practitioner/MCSDPractitioner-Example",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "MCSDPractitioner-Example",
+        "meta": {
+          "profile": [
+            "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Practitioner"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Wil E. Coyote</p></div>"
+        },
+        "name": [
+          {
+            "text": "Wil E. Coyote"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner"
+      }
+    }
+  ]
+}

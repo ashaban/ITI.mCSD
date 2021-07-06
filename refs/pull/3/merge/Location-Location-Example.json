@@ -1,0 +1,13 @@
+{
+  "resourceType": "Location",
+  "id": "Location-Example",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>name</b>: Location-Example</p><p><b>managingOrganization</b>: <a href=\"Organization-Organization-Example.html\">Generated Summary: active; name: Organization-Example</a></p></div>"
+  },
+  "status": "active",
+  "name": "Location-Example",
+  "managingOrganization": {
+    "reference": "Organization/Organization-Example"
+  }
+}

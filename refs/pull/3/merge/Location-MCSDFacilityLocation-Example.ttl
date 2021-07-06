@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/ITI/mCSD/Location/MCSDFacilityLocation-Example> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MCSDFacilityLocation-Example"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation";
+       fhir:index 0;
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.FacilityLocation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>name</b>: MCSDFacilityLocation-Example</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 HOSP}\">HOSP</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p><p><b>physicalType</b>: <span title=\"Codes: \">PC</span></p><p><b>managingOrganization</b>: <a href=\"Organization-MCSDFacilityOrganization-Example.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 govt}\">govt</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; name: MCSDFacilityOrganization-Example</a></p></div>"
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.name [ fhir:value "MCSDFacilityLocation-Example"];
+  fhir:Location.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:ietf:rfc:3986" ];
+       fhir:Coding.code [ fhir:value "HOSP" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://github.com/ihe/ITI.mCSD" ];
+       fhir:Coding.code [ fhir:value "Facility" ]
+     ]
+  ];
+  fhir:Location.physicalType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "PC" ]
+     ]
+  ];
+  fhir:Location.managingOrganization [
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Organization/MCSDFacilityOrganization-Example>;
+     fhir:Reference.reference [ fhir:value "Organization/MCSDFacilityOrganization-Example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://profiles.ihe.net/ITI/mCSD/Location/MCSDFacilityLocation-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

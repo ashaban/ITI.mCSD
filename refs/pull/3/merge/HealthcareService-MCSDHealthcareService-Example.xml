@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="MCSDHealthcareService-Example"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.HealthcareService"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>type</b>: <span title="Codes: ">General Practice</span></p><p><b>location</b>: <a href="Location-MCSDFacilityLocation-Example.html">Generated Summary: status: active; name: MCSDFacilityLocation-Example; <span title="Codes: {urn:ietf:rfc:3986 HOSP}">HOSP</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span>; <span title="Codes: ">PC</span></a></p><p><b>name</b>: ANC</p></div>
+  </text>
+  <type>
+    <coding>
+      <code value="124"/>
+      <display value="General Practice"/>
+    </coding>
+  </type>
+  <location>
+    <reference value="Location/MCSDFacilityLocation-Example"/>
+  </location>
+  <name value="ANC"/>
+</HealthcareService>

@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://profiles.ihe.net/ITI/mCSD/PractitionerRole/MCSDPractitionerRole-Example> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MCSDPractitionerRole-Example"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole";
+       fhir:index 0;
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.PractitionerRole>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>practitioner</b>: <a href=\"Practitioner-MCSDPractitioner-Example.html\">Generated Summary: Wil E. Coyote</a></p><p><b>organization</b>: <a href=\"Organization-MCSDFacilityOrganization-Example.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 govt}\">govt</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; name: MCSDFacilityOrganization-Example</a></p><p><b>code</b>: <span title=\"Codes: \">nurse</span></p><p><b>location</b>: <a href=\"Location-MCSDFacilityLocation-Example.html\">Generated Summary: status: active; name: MCSDFacilityLocation-Example; <span title=\"Codes: {urn:ietf:rfc:3986 HOSP}\">HOSP</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; <span title=\"Codes: \">PC</span></a></p><p><b>healthcareService</b>: <a href=\"HealthcareService-MCSDHealthcareService-Example.html\">Generated Summary: <span title=\"Codes: \">General Practice</span>; name: ANC</a></p></div>"
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Practitioner/MCSDPractitioner-Example>;
+     fhir:Reference.reference [ fhir:value "Practitioner/MCSDPractitioner-Example" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Organization/MCSDFacilityOrganization-Example>;
+     fhir:Reference.reference [ fhir:value "Organization/MCSDFacilityOrganization-Example" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "nurse" ]
+     ]
+  ];
+  fhir:PractitionerRole.location [
+     fhir:index 0;
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/Location/MCSDFacilityLocation-Example>;
+     fhir:Reference.reference [ fhir:value "Location/MCSDFacilityLocation-Example" ]
+  ];
+  fhir:PractitionerRole.healthcareService [
+     fhir:index 0;
+     fhir:link <http://profiles.ihe.net/ITI/mCSD/HealthcareService/MCSDHealthcareService-Example>;
+     fhir:Reference.reference [ fhir:value "HealthcareService/MCSDHealthcareService-Example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://profiles.ihe.net/ITI/mCSD/PractitionerRole/MCSDPractitionerRole-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
